@@ -1,0 +1,36 @@
+body{
+    max-width: 400px;
+}
+
+.header{
+   display: flex;
+   background-color:antiquewhite;
+   background-attachment: fixed;
+}
+footer{
+    background-color: blueviolet;
+    background-attachment: fixed;
+    padding: 3vw;
+    justify-content: end;
+}
+.textFooter{
+    text-align: center;
+}
+.lista{
+    display: flex;
+    
+}
+.links{
+    margin:2vh;
+    background-color: aquamarine;
+    padding: 2vh;
+    border: 0.5vh solid black;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    border-radius: 1vh;
+    margin:0.5vh;
+}
