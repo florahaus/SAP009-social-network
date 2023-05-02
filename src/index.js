@@ -2,6 +2,7 @@
 import login from './lib/login/index.js';
 import feed from './lib/feed/index.js';
 import about from './lib/about/index.js';
+import cadastro from './lib/cadastro/index.js';
 
 const main = document.querySelector('#conteudoPrincipal');
 
@@ -18,8 +19,11 @@ const init = () => {
       case '#about':
         main.appendChild(about());
         break;
+      case '#cadastro':
+        main.appendChild(cadastro());
+        break;
       default:
-        main.appendChild(login());
+        main.appendChild(cadastro());
     }
   });
 };
