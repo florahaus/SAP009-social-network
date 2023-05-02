@@ -1,36 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Carme&family=Carter+One&family=Monoton&display=swap');
+
 body{
     max-width: 400px;
+    background-color: #60AAAD;
 }
 
 .header{
    display: flex;
-   background-color:antiquewhite;
+   background-color:#60AAAD;
    background-attachment: fixed;
+   flex-direction: column;
+   justify-content: center;
 }
-footer{
-    background-color: blueviolet;
-    background-attachment: fixed;
-    padding: 3vw;
-    justify-content: end;
-}
-.textFooter{
+.tituloHeader{
+    font-family:'Monoton', cursive;
+    font-size: 22px;
+    font-weight: 400;
     text-align: center;
+    margin-top: 1vh;
+}
+.pHeader{
+   font-family: 'Carter One';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 6px;
+   line-height: 9px;
+   text-align: center;
+   margin-top: -2.3vh;
+   margin-bottom: 2vh;
+   
+}
+.menu{
+    background-color: #FF952A;
+    margin-top: -1.3vh;
+    margin-left: -2vh;
+    margin-right: -2vh;
+    display: flex;
+    flex-flow: row wrap;
+    height: 3vh;
+    justify-content: center;
+
 }
 .lista{
-    display: flex;
-    
+   display: flex;
+   list-style: none;
+   margin: 0;
+   padding: 0;
 }
 .links{
-    margin:2vh;
-    background-color: aquamarine;
-    padding: 2vh;
-    border: 0.5vh solid black;
+    flex:1;
+    text-align:center;
+    flex-direction: row;
+    padding: 0 10px;
+    font-family:'Carter One';
 }
-form{
+#linkSpa{
+    color: #4c4f52;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.formLogin, .formFeed, .formPagCad{
     display: flex;
     flex-direction: column;
 }
-input{
-    border-radius: 1vh;
-    margin:0.5vh;
+.titLogin, #titFeed, #titAbout, #titPagCad{
+    font-family: 'Carter One';
+    font-size: 20px;
+    text-align: center;
+}
+#labelEmail, #labelSenha, #postFeed, #pAbout, #labelNomeCad, #labelEmailCad, #labelSenhaCad{
+    text-align: initial;
+    font-family:'Carter One';
+    color: #f0f8ff;
+}
+#inputEmail, #inputSenha, #inputFeed, #inputNomeCad, #inputEmailCad, #inputSenhaCad{
+    justify-self: center;
+    background-color: #ff952a6e;
+    border-color: #FF952A;
+    border-radius: 10px;
+    border-style: double;
+}
+#botaoLogin, #botaoFeed, #botaoPagCad{
+    margin: 2vh;
+    background-color: #ff952a6e;
+    border-color: #FF952A;
+    border-radius: 10px;
+    border-style: double;
+    font-family:'Carter One';
+    color:aliceblue;
+    width: 8vh;
+}
+#pCadLogin, #pPagCad{
+    font-family:'Carme', sans-serif;
+    color: aliceblue;
+}
+#linkCadLogin, #linkPagLogin{
+    color:#8a5118;
+}
+footer{
+    display: flex;
+    justify-content: center;    
+}
+.footer{
+    background-color: #60AAAD;
+    width: 100%;
+    font-family: 'Carme', sans-serif;
+    color:aliceblue;
+    margin-top:10vh;
 }

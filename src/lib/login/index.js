@@ -8,18 +8,18 @@
 export default () => {
   const container = document.createElement('div');
   const template = `
-  <h2> Faça o login ou cadastre-se </h2>
-  <form>
-   <label id="email" for="email"> E-mail:</label>
-   <input type="email" id="email" name="email">
+  <h2 class="titLogin"> Faça o login ou cadastre-se </h2>
+  <form class="formLogin">
+   <label id="labelEmail" for="email"> E-mail:</label>
+   <input type="email" id="inputEmail" name="email">
 
-   <label id="senha" for="senha"> Senha:</label>
-   <input for="password" id="senha" name="senha">
+   <label id="labelSenha" for="senha"> Senha:</label>
+   <input for="password" id="inputSenha" name="senha">
 
-   <input type="submit" value="Enviar">
+   <input id="botaoLogin" type="submit" value="Enviar">
   </form>
 
-  <p> Ainda não possui conta? <a href="/#Cadastro">Cadastre-se aqui </a></p>
+  <p id="pCadLogin"> Ainda não possui conta? <a id="linkCadLogin" href="/#Cadastro">Cadastre-se aqui </a></p>
   `;
   container.innerHTML = template;
   return container;
