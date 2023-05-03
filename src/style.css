@@ -75,7 +75,7 @@ main{
     font-family:'Carter One';
     color: #f0f8ff;
 }
-#inputEmail, #inputSenha, #inputFeed, #inputNomeCad, #inputEmailCad, #inputSenhaCad{
+#inputEmail, #inputPassword, #inputFeed, #inputNomeCad, #inputEmailCad, #inputSenhaCad{
     justify-self: center;
     background-color: #ff952a6e;
     border-color: #FF952A;
@@ -108,5 +108,5 @@ footer{
     width: 100%;
     font-family: 'Carme', sans-serif;
     color:aliceblue;
-    margin-top:10vh;
+    margin-top:50vh;
 }

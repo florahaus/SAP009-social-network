@@ -1,8 +1,8 @@
 /* eslint-disable default-case */
-import login from './lib/login/index.js';
-import feed from './lib/feed/index.js';
-import about from './lib/about/index.js';
-import cadastro from './lib/cadastro/index.js';
+import login from './lib/login/login.js';
+import feed from './lib/feed/feed.js';
+import about from './lib/about/about.js';
+import cadastro from './lib/cadastro/cadastro.js';
 
 const main = document.querySelector('#conteudoPrincipal');
 
