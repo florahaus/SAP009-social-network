@@ -1,7 +1,8 @@
 export default () => {
   const containerFeed = document.createElement('div');
   const templateFeed = `
-    <h2 id="titFeed"> Faça suas postagens</h2>
+  <link rel="stylesheet" href="./lib/feed/feed.css">
+    <h2 id="titFeed"> Registre suas memórias favoritas</h2>
     <form class="formFeed">
      <label id="postFeed" for="postagens"> Post:</label>
      <input id="inputFeed" type="textarea" name="postagem">

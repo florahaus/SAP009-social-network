@@ -1,24 +1,33 @@
+import {cadastro} from '../../firebase/firebaseLogin.js'
+
 export default () => {
   const containerCad = document.createElement('div');
   const templateCad = `
+  <link rel="stylesheet" href="./lib/cadastro/cadastro.css">
     <h2 id="titPagCad"> Cadastro </h2>
+
     <form class="formPagCad">
-
-     <label id="labelNomeCad" for="nome"> Nome completo:</label>
-     <input type="text" id="inputNomeCad" name="nome">
-  
      <label id="labelEmailCad" for="e-mail"> E-mail:</label>
-     <input for="password" id="inputEmailCad" name="senha">
+     <input for="email" id="inputEmailCad" name="email" placeholder="digite seu e-mail">
 
-     <label id="labelSenhaCad" for="senha"> Senha:</label>
-     <input for="password" id="inputSenhaCad" name="senha">
+     <label id="labelPasswordCad" for="password"> Senha:</label>
+     <input for="password" id="inputPasswordCad" name="password">
   
-     <input id="botaoPagCad" type="submit" value="Enviar">
-
+     <button input id="botaoPagCad" type="submit" value="Enviar"> Cadastrar </button>
     </form>
   
     <p id="pPagCad"> Ir para <a id="linkPagLogin" href="/#login">Login </a></p>
     `;
   containerCad.innerHTML = templateCad;
+  
+  const emailCad = containerCad.querySelector('#inputEmailCad');
+  const passwordCad = containerCad.querySelector('#inputPasswordCad');
+
+  const botaoPagCad = containerCad.querySelector('#botaoPagCad');
+  botaoPagCad.addEventListener('click', (event) => {
+    event.preventDefault();
+    cadastro(emailCad.value, passwordCad.value)
+  });
+  
   return containerCad;
 };
