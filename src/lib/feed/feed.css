@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Carme&family=Carter+One&family=Monoton&display=swap');
+
+.formFeed {
+    display: flex;
+    flex-direction: column;
+}
+#titFeed {
+    font-family: 'Carter One';
+    font-size: 20px;
+    text-align: center;
+    padding: 5vh 0 0 1.8vh;
+    color: aliceblue;
+}
+#postFeed {
+    align-self: center;
+    font-family:'Carter One';
+    color: #f0f8ff;
+    margin: 2vh;
+}
+#inputFeed {
+    justify-self: center;
+    background-color: #ff952a6e;
+    border-color: #FF952A;
+    border-radius: 10px;
+    border-style: double;
+    margin-left: 3vh;
+    width: 40vh;
+    height: 15vh;
+}
+#botaoFeed {
+    margin-top: 3vh;
+    margin-bottom: 35vh;
+    background-color: #ff952a6e;
+    border-color: #FF952A;
+    border-radius: 10px;
+    border-style: double;
+    font-family:'Carter One';
+    color:aliceblue;
+    width: 8vh;
+    align-self: center;
+}

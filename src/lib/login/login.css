@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Carme&family=Carter+One&family=Monoton&display=swap');
+
+.formLogin{
+    display: flex;
+    flex-direction: column;
+}
+.titLogin {
+    font-family: 'Carter One';
+    font-size: 20px;
+    text-align: center; 
+    padding: 8vh 0 5vh 1.8vh;
+    color:aliceblue;
+}
+#labelEmail{
+    font-family:'Carter One';
+    color: #f0f8ff;
+    align-self: center;
+} 
+#labelPassword {
+    font-family:'Carter One';
+    color: #f0f8ff;
+    align-self: center;
+    margin-bottom: 1vh;
+}
+#inputEmail{
+    justify-self: center;
+    background-color: #ff952a6e;
+    border-color: #FF952A;
+    border-radius: 10px;
+    border-style: double;
+    margin-bottom: 5vh;
+    margin-top: 1vh;
+    margin-left: 2vh;
+    height: 2.5vh;
+} 
+#inputPassword {
+    align-self: center;
+    background-color: #ff952a6e;
+    border-color: #FF952A;
+    border-radius: 10px;
+    border-style: double;
+    width: 15vh;
+    height: 2.5vh;
+    margin-left: 1vh;
+}
+#botaoLogin{
+    margin-top: 5vh;
+    margin-left: 1vh;
+    margin-bottom: 5vh;
+    background-color: #ff952a6e;
+    border-color: #FF952A;
+    border-radius: 10px;
+    border-style: double;
+    font-family:'Carter One';
+    color:aliceblue;
+    width: 8vh;
+    align-self: center ;
+  
+}
+#pCadLogin{
+    font-family:'Carme', sans-serif;
+    color: aliceblue;
+    margin-top: 5vh;
+    margin-bottom: 15vh;
+    margin-left: 2.8vh;
+}
+#linkCadLogin{
+    color:#8a5118;
+}

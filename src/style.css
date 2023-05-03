@@ -11,24 +11,28 @@ body{
    background-attachment: fixed;
    flex-direction: column;
    justify-content: center;
+   padding: 3vh;
 }
 .tituloHeader{
     font-family:'Monoton', cursive;
-    font-size: 22px;
-    font-weight: 400;
+    font-size: 28px;
+    font-weight: 500;
     text-align: center;
-    margin-top: 1vh;
+    margin-top: 0.5vh;
+    color: aliceblue;
+    margin-left: 3vh;
 }
 .pHeader{
    font-family: 'Carter One';
    font-style: normal;
    font-weight: 400;
-   font-size: 6px;
-   line-height: 9px;
+   font-size: 8px;
+   line-height: 8px;
    text-align: center;
    margin-top: -2.3vh;
-   margin-bottom: 2vh;
-   
+   margin-bottom: 1.2vh;
+   color:aliceblue;
+   margin-left: 2.5vh;
 }
 .menu{
     background-color: #FF952A;
@@ -37,7 +41,7 @@ body{
     margin-right: -2vh;
     display: flex;
     flex-flow: row wrap;
-    height: 3vh;
+    height: 4vh;
     justify-content: center;
 
 }
@@ -51,54 +55,19 @@ body{
     flex:1;
     text-align:center;
     flex-direction: row;
-    padding: 0 10px;
+    padding: 3px 20px;
     font-family:'Carter One';
+    margin-left: 2vh;
 }
 #linkSpa{
-    color: #4c4f52;
+    color:aliceblue;
 }
 main{
     display: flex;
     justify-content: center;
+
 }
-.formLogin, .formFeed, .formPagCad{
-    display: flex;
-    flex-direction: column;
-}
-.titLogin, #titFeed, #titAbout, #titPagCad{
-    font-family: 'Carter One';
-    font-size: 20px;
-    text-align: center;
-}
-#labelEmail, #labelSenha, #postFeed, #pAbout, #labelNomeCad, #labelEmailCad, #labelSenhaCad{
-    text-align: initial;
-    font-family:'Carter One';
-    color: #f0f8ff;
-}
-#inputEmail, #inputPassword, #inputFeed, #inputNomeCad, #inputEmailCad, #inputSenhaCad{
-    justify-self: center;
-    background-color: #ff952a6e;
-    border-color: #FF952A;
-    border-radius: 10px;
-    border-style: double;
-}
-#botaoLogin, #botaoFeed, #botaoPagCad{
-    margin: 2vh;
-    background-color: #ff952a6e;
-    border-color: #FF952A;
-    border-radius: 10px;
-    border-style: double;
-    font-family:'Carter One';
-    color:aliceblue;
-    width: 8vh;
-}
-#pCadLogin, #pPagCad{
-    font-family:'Carme', sans-serif;
-    color: aliceblue;
-}
-#linkCadLogin, #linkPagLogin{
-    color:#8a5118;
-}
+
 footer{
     display: flex;
     justify-content: center;    
@@ -108,5 +77,4 @@ footer{
     width: 100%;
     font-family: 'Carme', sans-serif;
     color:aliceblue;
-    margin-top:50vh;
 }
