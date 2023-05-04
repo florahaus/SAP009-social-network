@@ -11,7 +11,7 @@ export default () => {
      <input for="email" id="inputEmailCad" name="email" placeholder="digite seu e-mail">
 
      <label id="labelPasswordCad" for="password"> Senha:</label>
-     <input for="password" id="inputPasswordCad" name="password">
+     <input for="password" type="password" id="inputPasswordCad" name="password">
   
      <button input id="botaoPagCad" type="submit" value="Enviar"> Cadastrar </button>
     </form>
@@ -27,6 +27,13 @@ export default () => {
   botaoPagCad.addEventListener('click', (event) => {
     event.preventDefault();
     cadastro(emailCad.value, passwordCad.value)
+    .then(response => {
+      alert("sua conta foi criada!")
+       window.location.hash = "#login";
+    })
+    .catch(error => {
+        alert(error);
+    })
   });
   
   return containerCad;
