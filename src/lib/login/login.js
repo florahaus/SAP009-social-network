@@ -1,4 +1,4 @@
-import login from '../../firebase/firebaseLogin.js'
+import {login} from '../../firebase/firebaseLogin.js'
 
 export default () => {
   const container = document.createElement('div');
@@ -11,7 +11,7 @@ export default () => {
     <input type="email" id="inputEmail" name="email" placeholder="digite seu e-mail">
 
     <label id="labelPassword" for="password"> Senha:</label>
-    <input for="password" id="inputPassword" name="password" placeholder="digite sua senha">
+    <input for="password" type="password" id="inputPassword" name="password" placeholder="digite sua senha">
 
     <button id="botaoLogin" type="submit" value="Enviar"> Enviar </button>
   </form>
@@ -27,6 +27,12 @@ export default () => {
   botaoLogin.addEventListener('click', (event) => {
     event.preventDefault();
     login(email.value, password.value)
+    .then(response => {
+      window.location.hash = "#feed";
+    })
+    .catch(error => {
+      alert(error);
+    })
   });
 
   return container;
