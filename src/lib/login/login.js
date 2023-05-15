@@ -1,4 +1,4 @@
-import {login} from '../../firebase/firebaseLogin.js'
+import { login } from '../../firebase/firebaseLogin.js';
 
 export default () => {
   const container = document.createElement('div');
@@ -8,32 +8,32 @@ export default () => {
 
   <form class="formLogin">
     <label id="labelEmail" for="email"> E-mail:</label>
-    <input type="email" id="inputEmail" name="email" placeholder="digite seu e-mail">
+    <input type="email" id="inputEmail" name="email" placeholder="email@email.com">
 
     <label id="labelPassword" for="password"> Senha:</label>
-    <input for="password" type="password" id="inputPassword" name="password" placeholder="digite sua senha">
+    <input for="password" type="password" id="inputPassword" name="password" placeholder="********">
 
     <button id="botaoLogin" type="submit" value="Enviar"> Enviar </button>
   </form>
 
-  <p id="pCadLogin"> Ainda não possui conta? <a id="linkCadLogin" href="/#Cadastro">Cadastre-se </a></p>
+  <p id="pCadLogin"> Ainda não possui conta? <a id="linkCadLogin" href="/#cadastro">Cadastre-se </a></p>
   `;
-  container.innerHTML = template; 
+  container.innerHTML = template;
 
   const email = container.querySelector('#inputEmail');
-  const password = container.querySelector('#inputPassword'); 
-   
+  const password = container.querySelector('#inputPassword');
+
   const botaoLogin = container.querySelector('#botaoLogin');
   botaoLogin.addEventListener('click', (event) => {
     event.preventDefault();
     login(email.value, password.value)
-    .then(response => {
-      window.location.hash = "#feed";
-    })
-    .catch(error => {
-      alert(error);
-    })
+      .then(() => {
+        window.location.hash = '#feed';
+      })
+      .catch((error) => {
+        error.textContent = error.message;
+        error.classList.remove('hidden');
+      });
   });
-
   return container;
 };
