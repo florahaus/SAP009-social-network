@@ -9,21 +9,36 @@
     font-size: 26px;
     text-align: center;
     color:aliceblue;
-    padding: 10vh 0 3vh 0;
+    padding: 7vh 0 3vh 0;
+}
+#labelNome{
+    text-align: center;
+    font-family:'Carter One';
+    font-size: 20px;
+    color: #f0f8ff;
 }
 #labelEmailCad{
     text-align: center;
     font-family:'Carter One';
     font-size: 20px;
     color: #f0f8ff;
-    
 } 
 #labelPasswordCad{
     text-align: center;
     font-family:'Carter One';
     color: #f0f8ff;
     font-size: 20px;
-
+}
+#inputNome{
+    align-self: center;
+    background-color: #ff952a6e;
+    border-color: #FF952A;
+    border-radius: 10px;
+    border-style: double;
+    width: 35vh;
+    height: 2.5vh;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
 }
 #inputEmailCad{
     align-self: center;
@@ -33,9 +48,8 @@
     border-style: double;
     margin-bottom: 3vh;
     margin-top: 1vh;
-    width: 23vh;
+    width: 35vh;
     height: 2.5vh;
-    margin-left: 2vh;
 }
  #inputPasswordCad{
     align-self: center;
@@ -43,11 +57,11 @@
     border-color: #FF952A;
     border-radius: 10px;
     border-style: double;
-    width: 15vh;
+    width: 25vh;
     height: 2.5vh;
     margin-top: 1vh;
     margin-bottom: 3vh;
-    margin-left: 1vh;
+
 }
 #botaoPagCad{
     margin: 2vh;
@@ -59,7 +73,7 @@
     color:aliceblue;
     width: 10vh;
     align-self: center;
-    margin-left: 4vh;
+    
 }
 #pPagCad{
     font-family:'Carme', sans-serif;
@@ -67,7 +81,7 @@
     text-align: center;
     margin-top: 5vh;
     margin-bottom: 18vh;
-    margin-left: 1.5vh;
+
 }
  #linkPagLogin{
     color:#8a5118;

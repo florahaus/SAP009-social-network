@@ -1,3 +1,5 @@
+import { auth } from '../../firebase/firebaseLogin.js';
+
 export default () => {
   const containerFeed = document.createElement('div');
   const templateFeed = `
@@ -11,5 +13,6 @@ export default () => {
     </form>
     `;
   containerFeed.innerHTML = templateFeed;
+  console.log(auth.currentUser.displayName);
   return containerFeed;
 };
