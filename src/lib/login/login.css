@@ -23,15 +23,15 @@
     margin-bottom: 1vh;
 }
 #inputEmail{
-    justify-self: center;
+    align-self: center;
     background-color: #ff952a6e;
     border-color: #FF952A;
     border-radius: 10px;
     border-style: double;
     margin-bottom: 5vh;
     margin-top: 1vh;
-    margin-left: 2vh;
     height: 2.5vh;
+    width: 35vh;
 } 
 #inputPassword {
     align-self: center;
@@ -39,13 +39,12 @@
     border-color: #FF952A;
     border-radius: 10px;
     border-style: double;
-    width: 15vh;
+    width: 25vh;
     height: 2.5vh;
-    margin-left: 1vh;
+
 }
 #botaoLogin{
     margin-top: 5vh;
-    margin-left: 1vh;
     margin-bottom: 5vh;
     background-color: #ff952a6e;
     border-color: #FF952A;
@@ -66,4 +65,23 @@
 }
 #linkCadLogin{
     color:#8a5118;
+}
+.popUp{
+    display: flex;
+    flex-direction: column;
+}
+#pPopUp{
+    font-family:'Carme', sans-serif;
+    color: aliceblue;
+    text-align: center;
+    font-size: 20px;
+}
+#popUpGoogle{
+    background-color: #60AAAD;
+    border: none;
+    align-self: center;
+}
+img{
+    width: 5vh;
+    align-items: center;
 }
