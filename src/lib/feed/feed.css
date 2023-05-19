@@ -1,40 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Carme&family=Carter+One&family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Alice&family=Carme&family=Carter+One&family=Monoton&display=swap');
 
 .formFeed {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 #titFeed {
-    font-family: 'Carter One';
-    font-size: 20px;
+    font-family:'Alegreya SC', serif;
+    font-size: 2.5vh;
     text-align: center;
-    padding: 5vh 0 0 1.8vh;
     color: aliceblue;
 }
 #postFeed {
-    align-self: center;
-    font-family:'Carter One';
+    text-align: center;
+    font-family: 'Alice', serif;
     color: #f0f8ff;
-    margin: 2vh;
+    font-size: 1.8vh;
+    margin-bottom: 1.5vh;
 }
 #inputFeed {
-    justify-self: center;
-    background-color: #ff952a6e;
-    border-color: #FF952A;
-    border-radius: 10px;
-    border-style: double;
-    width: 40vh;
-    height: 15vh;
+    align-self: center;
+    background-color: #ff952aa9;
+    border-color: #0a767a;
+    border-radius: 1vh;
+    border-style:solid;
+    width: 35vh;
+    height: 10vh;
 }
 #botaoFeed {
     margin-top: 3vh;
-    margin-bottom: 35vh;
-    background-color: #ff952a6e;
-    border-color: #FF952A;
-    border-radius: 10px;
-    border-style: double;
+    background-color: #ff952aa9;
+    border-color: #0a767a;
+    border-radius: 1vh;
+    border-style:solid;
     font-family:'Carter One';
     color:aliceblue;
     width: 8vh;
     align-self: center;
+    margin-bottom: 1vh;
+}
+#feedComPosts{
+    display: flex;
+    flex-direction: column;
+}
+#boxPost{
+    background-color: #ff952aa9;
+    border-color: #0a767a;
+    border-radius: 1vh;
+    border-style:solid;
+    margin-bottom: 2vh;
+    width: 35vh;
+    margin-right: 4vh;
+}
+#nomeUser{
+    font-family: 'Alegreya SC', serif;
+    margin-top: 0.2vh;
+    margin-left: 1vh;
+    margin-bottom: -2vh;
+    color:aliceblue;
+}
+#contPost{
+    font-family: 'Alice', serif;
+    color:rgb(42, 55, 55);
+    margin-left: 1vh;
 }
