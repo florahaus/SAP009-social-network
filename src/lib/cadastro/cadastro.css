@@ -1,88 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Carme&family=Carter+One&family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Alice&family=Carme&family=Carter+One&family=Monoton&display=swap');
 
 .formPagCad{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 #titPagCad{
-    font-family: 'Carter One';
-    font-size: 26px;
+    font-family: 'Alegreya SC', serif;
+    font-size: 3vh;
     text-align: center;
     color:aliceblue;
-    padding: 7vh 0 3vh 0;
+    
 }
 #labelNome{
     text-align: center;
-    font-family:'Carter One';
-    font-size: 20px;
+    font-family:'Alice', serif;
+    font-size:1.8vh;
     color: #f0f8ff;
+    margin-top: 3vh;
 }
 #labelEmailCad{
     text-align: center;
-    font-family:'Carter One';
-    font-size: 20px;
+    font-family:'Alice', serif;
     color: #f0f8ff;
+    font-size: 2vh;
 } 
 #labelPasswordCad{
     text-align: center;
-    font-family:'Carter One';
+    font-family:'Alice', serif;
     color: #f0f8ff;
-    font-size: 20px;
+    font-size: 2vh;
 }
 #inputNome{
     align-self: center;
-    background-color: #ff952a6e;
-    border-color: #FF952A;
-    border-radius: 10px;
-    border-style: double;
-    width: 35vh;
-    height: 2.5vh;
+    background-color: #ff952aa9;
+    border-color: #0a767a;
+    border-radius: 1vh;
+    border-style:solid;
+    margin-bottom: 5vh;
     margin-top: 1vh;
-    margin-bottom: 3vh;
+    height: 3vh;
+    width: 35vh;
 }
 #inputEmailCad{
     align-self: center;
-    background-color: #ff952a6e;
-    border-color: #FF952A;
+    background-color: #ff952aa9;
+    border-color: #0a767a;
     border-radius: 10px;
     border-style: double;
     margin-bottom: 3vh;
     margin-top: 1vh;
     width: 35vh;
-    height: 2.5vh;
+    height: 3vh;
 }
  #inputPasswordCad{
     align-self: center;
-    background-color: #ff952a6e;
-    border-color: #FF952A;
+    background-color: #ff952aa9;
+    border-color: #0a767a;
     border-radius: 10px;
     border-style: double;
     width: 25vh;
-    height: 2.5vh;
+    height: 3vh;
     margin-top: 1vh;
     margin-bottom: 3vh;
 
 }
 #botaoPagCad{
     margin: 2vh;
-    background-color: #ff952a6e;
-    border-color: #FF952A;
+    background-color: #ff952aa9;
+    border-color: #0a767a;
     border-radius: 10px;
     border-style: double;
-    font-family:'Carter One';
+    font-family:'Alice', serif;
     color:aliceblue;
     width: 10vh;
+    height: 3vh;
     align-self: center;
     
 }
 #pPagCad{
-    font-family:'Carme', sans-serif;
+    font-family:'Alice', serif;
     color: aliceblue;
     text-align: center;
     margin-top: 5vh;
-    margin-bottom: 18vh;
+    
 
 }
  #linkPagLogin{
-    color:#8a5118;
+    color:#03585b;
 }

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Carme&family=Carter+One&family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Alice&family=Carme&family=Carter+One&family=Monoton&display=swap');
+
 
 body{
     max-width: 400px;
@@ -20,10 +21,9 @@ body{
     text-align: center;
     margin-top: 0.5vh;
     color: aliceblue;
-    margin-left: 3vh;
 }
 .pHeader{
-   font-family: 'Carter One';
+   font-family: 'Alegreya SC', serif;
    font-style: normal;
    font-weight: 400;
    font-size: 8px;
@@ -32,32 +32,36 @@ body{
    margin-top: -2.3vh;
    margin-bottom: 1.2vh;
    color:aliceblue;
-   margin-left: 2.5vh;
 }
 .menu{
     background-color: #FF952A;
+    border-color: #0a767a;
+    border-style: solid;
     margin-top: -1.3vh;
     margin-left: -2vh;
     margin-right: -2vh;
     display: flex;
     flex-flow: row wrap;
     height: 4vh;
-    justify-content: center;
+    justify-content: space-around;
 
 }
 .lista{
    display: flex;
    list-style: none;
    margin: 0;
-   padding: 0;
+   padding: 0; 
+   margin-right: 5vh;
 }
 .links{
     flex:1;
     text-align:center;
     flex-direction: row;
-    padding: 3px 20px;
-    font-family:'Carter One';
-    margin-left: 2vh;
+    margin-top: 0.2vh;
+    margin-left: 5vh;
+    font-family:'Alegreya SC', serif;
+    font-size: 20px;
+    
 }
 #linkSpa{
     color:aliceblue;
@@ -73,11 +77,12 @@ footer{
     justify-content: center;    
 }
 .footer{
+    margin-top: 5vh;
     background-color: #60AAAD;
     width: 100%;
-    font-family: 'Carme', sans-serif;
+    font-family: 'Alegreya SC', serif;
     color:aliceblue;
 }
 a{
-   color: #FF952A; 
+   color: #03585b; 
 }

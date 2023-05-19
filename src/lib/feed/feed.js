@@ -1,5 +1,5 @@
 import { auth } from '../../firebase/firebaseLogin.js';
-import { addPost } from '../../firebase/firestore.js';
+import { addPost, mostrarPosts } from '../../firebase/firestore.js';
 
 export default () => {
   const containerFeed = document.createElement('div');
@@ -9,19 +9,32 @@ export default () => {
     <h2 id="titFeed"> Registre suas memórias favoritas</h2>
 
     <form class="formFeed">
-     <label id="postFeed" for="inputFeed"> Post:</label>
-     <input id="inputFeed" type="textarea" name="postagem" placeholder="escreva sua mensagem para o futuro ou sua memória favorita">
-     </form>
+     <label id="postFeed" for="inputFeed"> escreva sua mensagem ou sua memória favorita:</label>
+     <input id="inputFeed" type="textarea" name="postagem" placeholder="escreva seu post">
+    
 
-     <input id="botaoFeed" type="submit" value="Enviar">
+     <input id="botaoFeed" type="submit" value="Enviar"> 
+     </form>
    <section id="tdsPosts">
    <ul id="feedComPosts"></ul>
    </section>
 
     `;
-
   containerFeed.innerHTML = templateFeed;
-  console.log(auth.currentUser.displayName);
+  function infoFeed(posts) {
+    const postContainer = document.createElement('div');
+    const postTemplate = `
+    <div id="boxPost">
+    <p id="nomeUser">${posts.displayName} </p>
+    <p id="contPost">${posts.conteudo} </p>
+    </div>
+    `;
+    postContainer.innerHTML = postTemplate;
+
+    const juntar = containerFeed.querySelector('#feedComPosts');
+    juntar.appendChild(postContainer);
+  }
+  mostrarPosts(infoFeed);
 
   const ConteudoPost = containerFeed.querySelector('#inputFeed');
   const botaoFeed = containerFeed.querySelector('#botaoFeed');
