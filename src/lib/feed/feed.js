@@ -54,15 +54,15 @@ export default () => {
 
   mostrarPosts(infoFeed);
 
-  const ConteudoPost = containerFeed.querySelector('#inputFeed');
+  const conteudoPost = containerFeed.querySelector('#inputFeed');
   const botaoFeed = containerFeed.querySelector('#botaoFeed');
 
   botaoFeed.addEventListener('click', (event) => {
     event.preventDefault();
     // verifica se o conteudo do post é vazio ou contem apenas espaços em branco;
-    if (ConteudoPost.value !== '') {
+    if (conteudoPost.value !== '') {
     // função para adicionar post a coleção;
-      addPost(ConteudoPost.value, auth.currentUser.displayName, new Date())
+      addPost(conteudoPost.value, auth.currentUser.displayName, new Date())
         .then(() => {
         })
         .catch((error) => error);
