@@ -1,5 +1,7 @@
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
+// import { addDoc } from 'firebase/firestore';
 import { login, cadastro } from '../src/firebase/firebaseLogin.js';
+// import { addPost, mostrarPosts, atualizarPost } from '../src/firebase/firestore.js';
 
 jest.mock('firebase/auth');
 describe('testes de autenticação', () => {
@@ -21,3 +23,13 @@ describe('testes de autenticação', () => {
     expect(createUserWithEmailAndPassword).toHaveBeenCalledWith(undefined, emailCad, passwordCad);
   });
 });
+// jest.mock('firebase/auth');
+// describe('teste de post'), () => {
+//   it('deveria adicionar post na coleção', () => {
+//     addDoc.mock('conteudo', 'displayName');
+//     const conteudo = 'oi, esse é um teste';
+//     const displayName = 'Flora';
+//     addPost(conteudo, displayName);
+//     expect(addPost).toHaveBeenCalledWith(conteudo, displayName);
+//   });
+// };
