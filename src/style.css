@@ -4,7 +4,7 @@
 @import url(./lib/login/login.css);
 @import url(./lib/about/about.css);
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
 body{
     background-color: #60AAAD;
 }
@@ -19,26 +19,18 @@ body{
 }
 .tituloHeader{
     font-family:'Monoton', cursive;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 500;
     text-align: center;
     margin-top: 0.5vh;
     color: aliceblue;
 }
 .pHeader{
-   font-family: 'Alegreya SC', serif;
-   font-style: normal;
-   font-weight: 400;
-   font-size: 8px;
-   line-height: 8px;
-   text-align: center;
-   margin-top: -2.3vh;
-   margin-bottom: 1.2vh;
-   color:aliceblue;
+   font-size: 0px;
 }
 .menu{
-    background-color: #FF952A;
-    border-color: #0a767a;
+    background-color: #0e54567f;
+    border-color: #fe942b;
     border-style: solid;
     margin-top: -1.3vh;
     margin-left: -2vh;
@@ -60,7 +52,7 @@ body{
     flex:1;
     text-align:center;
     flex-direction: row;
-    margin-top: 0.2vh;
+    margin-top: 0.8vh;
     margin-left: 5vh;
     font-family:'Alegreya SC', serif;
     font-size: 20px;
@@ -89,7 +81,89 @@ a{
    color: #03585b; 
 }
 }
-@media (min-width: 400px) and (max-width:700px) {
+@media (min-width: 500px) and (max-width:700px) {
+    body{
+        background-color: #60AAAD;
+    }
+    .header{
+        display: flex;
+        background-color:#60AAAD;
+        background-attachment: fixed;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3vh;
+     }
+     .tituloHeader{
+        font-family:'Monoton', cursive;
+        font-size: 36px;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 0.1vh;
+        color: aliceblue;
+    }
+    .pHeader{
+        font-family: 'Alegreya SC', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 8px;
+        text-align: center;
+        margin-top: -2.3vh;
+        margin-bottom: 1.2vh;
+        color:aliceblue;
+     }
+     .menu{
+        background-color: #0e54567f;
+        border-color: #fe942b;
+        border-style: solid;
+        margin-top: -1.3vh;
+        margin-left: -2vh;
+        margin-right: -2vh;
+        display: flex;
+        flex-flow: row wrap;
+        height: 6vh;
+        justify-content: space-around;
+    }
+    .lista{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0; 
+        margin-right: 5vh;
+     }
+     .links{
+        flex:1;
+        text-align:center;
+        flex-direction: row;
+        margin-top: 1vh;
+        margin-left: 9vh;
+        margin-right: 3.5vh;
+        font-family:'Alegreya SC', serif;
+        font-size: 24px;
+    }
+    #linkSpa{
+        color:aliceblue;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+    
+    }
+    footer{
+        display: flex;
+        justify-content: center;    
+    }
+    .footer{
+        background-color: #60AAAD;
+        width: 100%;
+        font-family: 'Alegreya SC', serif;
+        color:aliceblue;
+    }
+    a{
+        color: #03585b; 
+     }
+}
+@media (min-width: 700px) and (max-width:2000px) {
     body{
         background-color: #60AAAD;
     }
@@ -121,8 +195,8 @@ a{
         color:aliceblue;
      }
      .menu{
-        background-color: #FF952A;
-        border-color: #0a767a;
+        background-color: #0e54567f;
+        border-color: #fe942b;
         border-style: solid;
         margin-top: -1.3vh;
         margin-left: -2vh;
@@ -169,9 +243,4 @@ a{
     a{
         color: #03585b; 
      }
-}
-@media (min-width: 700px) and (max-width:2000px) {
-    body{
-        background-color: #60AAAD;
-    }
 }

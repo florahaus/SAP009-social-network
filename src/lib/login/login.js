@@ -57,5 +57,16 @@ export default () => {
       .catch((error) => error);
   });
 
+  // verificarLogado(auth, (user) => {
+  //   if (user) {
+  //     window.location.hash = '#feed';
+  //     console.log(verificarLogado);
+  //     // Faça algo se o usuário estiver logado
+  //   } else {
+  //     window.location.hash = '#login';
+  //     // Faça algo se o usuário não estiver logado
+  //   }
+  // });
+
   return container;
 };
