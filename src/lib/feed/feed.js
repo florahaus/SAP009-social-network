@@ -1,16 +1,17 @@
 import { auth } from '../../firebase/firebaseLogin.js';
-import { addPost, atualizarPost, mostrarPosts } from '../../firebase/firestore.js';
+import {
+  addPost, atualizarPost, mostrarPosts, deletarPost,
+} from '../../firebase/firestore.js';
 
 export default () => {
   const containerFeed = document.createElement('div');
   const templateFeed = `
-  <link rel="stylesheet" href="./lib/feed/feed.css">
 
     <h2 id="titFeed"> Registre suas memórias favoritas</h2>
 
     <form class="formFeed">
      <label id="postFeed" for="inputFeed"> escreva sua mensagem ou sua memória favorita:</label>
-     <input id="inputFeed" type="textarea" name="postagem" placeholder="escreva seu post" >
+     <textarea id="inputFeed" type="textarea" name="postagem" placeholder="escreva seu post" ></textarea>
      <input id="botaoFeed" type="submit" value="Enviar"> 
      </form>
    <section id="tdsPosts">
@@ -23,36 +24,45 @@ export default () => {
   const postsNoFeed = containerFeed.querySelector('#feedComPosts');
 
   postsNoFeed.addEventListener('click', (event) => {
-    const postId = event.target.dataset.postid;
+    const editarId = event.target.dataset.editarid;
     const salvarId = event.target.dataset.salvarid;
+    const apagarId = event.target.dataset.apagarid;
     if (salvarId) {
       const textarea = containerFeed.querySelector(`#contPost${salvarId}`);
       atualizarPost(salvarId, textarea.value);
       textarea.setAttribute('disabled', true);
     }
-    console.log(postId);
-    if (postId) {
-      const textarea = containerFeed.querySelector(`#contPost${postId}`);
+    if (editarId) {
+      const textarea = containerFeed.querySelector(`#contPost${editarId}`);
       textarea.removeAttribute('disabled');
+    }
+    if (apagarId) {
+      if (window.confirm('Deseja mesmo apagar?')) {
+        deletarPost(apagarId);
+      }
     }
   });
   function infoFeed(posts, id) {
     const postContainer = document.createElement('div');
     const postTemplate = `
-    <div id="boxPost">
+    <div id="postCompleto">
     <p id="nomeUser">${posts.displayName} </p>
     <textarea id="contPost${id}" class="no-edit" disabled>${posts.conteudo} </textarea>
-    <button id="editarPost" data-postid=${id} >Editar Post</button>
-    <button id="salvarPost" data-salvarid=${id} >Salvar Post</button>
-    <button id="apagarPost" data-apagarid=${id} >Apagar Post</button>
+    <div id="boxPost">
+    <button id="editarPost" data-editarid=${id} >✏️</button>
+    <button id="salvarPost" data-salvarid=${id} >✅</button>
+    <button id="apagarPost" data-apagarid=${id} >🗑️</button>
+    </div>
     </div>
     `;
     postContainer.innerHTML = postTemplate;
 
     postsNoFeed.appendChild(postContainer);
   }
-
-  mostrarPosts(infoFeed);
+  function limparTela() {
+    postsNoFeed.innerHTML = '';
+  }
+  mostrarPosts(infoFeed, limparTela);
 
   const conteudoPost = containerFeed.querySelector('#inputFeed');
   const botaoFeed = containerFeed.querySelector('#botaoFeed');

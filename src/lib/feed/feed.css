@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Alice&family=Carme&family=Carter+One&family=Monoton&display=swap');
-
+@media (min-width:0px) and (max-width: 400px) {
 .formFeed {
     display: flex;
     flex-direction: column;
@@ -59,8 +59,205 @@
     margin-bottom: -2vh;
     color:aliceblue;
 }
-#contPost{
+textarea{
+    background-color: #ff952a00;
+    border: none;
     font-family: 'Alice', serif;
     color:rgb(42, 55, 55);
     margin-left: 1vh;
+}
+textarea{
+    background-color: #ff952a00;
+    border: none;
+    font-family: 'Alice', serif;
+    color:rgb(42, 55, 55);
+    font-size: 1.6vh;
+}
+#boxPost{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#editarPost, #salvarPost, #apagarPost{
+    background-color: #ff952aa9;
+    border-color: #0a767a;
+    border-radius: 1vh;
+    border-style:solid;
+    width: 5vh;
+    align-self: center;
+}
+img{
+    width: 3vh;
+    align-items: center;
+}
+}
+@media (min-width: 400px) and (max-width:700px) {
+    .formFeed {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #titFeed {
+        font-family:'Alegreya SC', serif;
+        text-align: center;
+        color: aliceblue;
+        font-size: 30px;
+    }
+    #postFeed{
+        text-align: center;
+        font-family: 'Alice', serif;
+        color: #f0f8ff;
+        font-size: 18px;
+        
+    }
+    #inputFeed{
+        align-self: center;
+        background-color: #ff952aa9;
+        border-color: #0a767a;
+        border-radius: 1vh;
+        border-style:solid;
+        width: 40vh;
+        height: 7vh;
+        margin-top: 1vh;
+    }
+    #botaoFeed {
+        margin-top: 2vh;
+        background-color: #ff952aa9;
+        border-color: #0a767a;
+        border-radius: 1vh;
+        border-style:solid;
+        font-family:'Carter One';
+        color:aliceblue;
+        width: 10vh;
+        align-self: center;
+        margin-bottom: 1vh;
+    }
+    #feedComPosts{
+        display: flex;
+        flex-direction: column;
+    }
+    #postCompleto{
+        background-color: #ff952aa9;
+        border-color: #0a767a;
+        border-radius: 1vh;
+        border-style:solid;
+        margin-bottom: 2vh;
+        width: 40vh;
+        margin-left: 1.5vh;
+    }
+    #nomeUser{
+        font-family: 'Alegreya SC', serif;
+        margin-top: 0.2vh;
+        margin-left: 1vh;
+        color:aliceblue;
+    }
+   textarea{
+        background-color: #ff952a00;
+        border: none;
+        font-family: 'Alice', serif;
+        color:rgb(42, 55, 55);
+        font-size: 1.6vh;
+   }
+   #boxPost{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+   }
+   #editarPost, #salvarPost, #apagarPost{
+        background-color: #ff952aa9;
+        border-color: #0a767a;
+        border-radius: 1vh;
+        border-style:solid;
+        width: 5vh;
+        align-self: center;
+   }
+   img{
+        width: 3vh;
+        align-items: center;
+}
+}
+@media (min-width: 700px) and (max-width:2000px) {
+    .formFeed {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #titFeed {
+        font-family:'Alegreya SC', serif;
+        text-align: center;
+        color: aliceblue;
+        font-size: 30px;
+    }
+    #postFeed{
+        text-align: center;
+        font-family: 'Alice', serif;
+        color: #f0f8ff;
+        font-size: 18px;
+        
+    }
+    #inputFeed{
+        align-self: center;
+        background-color: #ff952aa9;
+        border-color: #0a767a;
+        border-radius: 1vh;
+        border-style:solid;
+        width: 40vh;
+        height: 7vh;
+        margin-top: 1vh;
+    }
+    #botaoFeed {
+        margin-top: 2vh;
+        background-color: #ff952aa9;
+        border-color: #0a767a;
+        border-radius: 1vh;
+        border-style:solid;
+        font-family:'Carter One';
+        color:aliceblue;
+        width: 10vh;
+        align-self: center;
+        margin-bottom: 1vh;
+    }
+    #feedComPosts{
+        display: flex;
+        flex-direction: column;
+    }
+    #postCompleto{
+        background-color: #ff952aa9;
+        border-color: #0a767a;
+        border-radius: 1vh;
+        border-style:solid;
+        margin-bottom: 2vh;
+        width: 40vh;
+        margin-left: 1.5vh;
+    }
+    #nomeUser{
+        font-family: 'Alegreya SC', serif;
+        margin-top: 0.2vh;
+        margin-left: 1vh;
+        color:aliceblue;
+    }
+   textarea{
+        background-color: #ff952a00;
+        border: none;
+        font-family: 'Alice', serif;
+        color:rgb(42, 55, 55);
+        font-size: 1.6vh;
+   }
+   #boxPost{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+   }
+   #editarPost, #salvarPost, #apagarPost{
+        background-color: #ff952aa9;
+        border-color: #0a767a;
+        border-radius: 1vh;
+        border-style:solid;
+        width: 5vh;
+        align-self: center;
+   }
+   img{
+        width: 3vh;
+        align-items: center;
+}
 }

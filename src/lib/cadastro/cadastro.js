@@ -3,7 +3,6 @@ import { cadastro, nomeAtual } from '../../firebase/firebaseLogin.js';
 export default () => {
   const containerCad = document.createElement('div');
   const templateCad = `
-  <link rel="stylesheet" href="./lib/cadastro/cadastro.css">
     <h2 id="titPagCad"> Cadastro </h2>
 
     <form class="formPagCad">
