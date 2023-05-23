@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Alice&family=Carme&family=Carter+One&family=Monoton&display=swap');
 
-
+@media (max-width: 500px) {
 .formLogin{
     display: flex;
     flex-direction: column;
@@ -28,8 +28,8 @@
 }
 #inputEmail{
     align-self: center;
-    background-color: #ff952aa9;
-    border-color: #0a767a;
+    background-color: #0a767a;
+    border-color: #fe942b;
     border-radius: 1vh;
     border-style:outset;
     margin-bottom: 5vh;
@@ -37,21 +37,26 @@
     height: 2.5vh;
     width: 35vh;
 } 
+#inputEmail::placeholder{
+    color:antiquewhite;
+}
 #inputPassword {
     align-self: center;
-    background-color: #ff952aa9;
-    border-color: #0a767a;
+    background-color: #0a767a;
+    border-color: #fe942b;
     border-radius: 1vh;
     border-style:outset;
     width: 25vh;
     height: 2.5vh;
-
+}
+#inputPassword::placeholder{
+    color:antiquewhite;
 }
 #botaoLogin{
     margin-top: 5vh;
     margin-bottom: 3vh;
-    background-color: #ff952aa9;
-    border-color: #0a767a;
+    background-color: #0a767a;
+    border-color: #fe942b;
     border-radius: 1vh;
     border-style:outset;
     font-family:'Alice', serif;
@@ -89,4 +94,296 @@
 img{
     width: 5vh;
     align-items: center;
+}
+}
+@media (min-width: 500px) and (max-width:700px) {
+    .formLogin{
+        display: flex;
+        flex-direction: column;
+    }
+    .titLogin {
+        font-family: 'Alegreya SC', serif;
+        font-size: 3.5vh;
+        color:aliceblue;
+        text-align: center; 
+        margin-top:8vh;
+    }
+    #labelEmail{
+        font-family:'Alice', serif;
+        color: #f0f8ff;
+        font-size: 2.5vh;
+        text-align: center;
+        margin-top: 6vh;
+    } 
+    #labelPassword {
+        font-family:'Alice', serif;
+        color: #f0f8ff;
+        align-self: center;
+        font-size: 2.5vh;
+        margin-bottom: 1vh;
+    }
+    #inputEmail{
+        align-self: center;
+        background-color: #0e54567f;
+        border-color: #fe942b;
+        border-radius: 1vh;
+        border-style:outset;
+        margin-bottom: 5vh;
+        margin-top: 1vh;
+        height: 2.8vh;
+        width: 35vh;
+    } 
+    #inputEmail::placeholder{
+        color:antiquewhite ;
+    }
+    #inputPassword {
+        align-self: center;
+        background-color: #0e54567f;
+        border-color: #fe942b;
+        border-radius: 1vh;
+        border-style:outset;
+        width: 25vh;
+        height: 2.8vh;
+    
+    }
+    #inputPassword::placeholder{
+        color: antiquewhite;
+    }
+    #botaoLogin{
+        margin-top: 5vh;
+        margin-bottom: 3vh;
+        background-color: #0e54567f;
+        border-color: #fe942b;
+        border-radius: 1vh;
+        border-style:outset;
+        font-family:'Alice', serif;
+        color:aliceblue;
+        font-size: 2vh;
+        width: 10vh;
+        height: 2.8vh;
+        align-self: center ;
+    }
+    #pCadLogin{
+        font-family:'Alice', serif;
+        color: aliceblue;
+        margin-top: 3vh;
+        text-align: center;
+    }
+    #linkCadLogin{
+        color:#03585b;
+    }
+    .popUp{
+        display: flex;
+        flex-direction: column;
+    }
+    #pPopUp{
+        font-family:'Alice', serif;
+        color: #03585b;
+        text-align: center;
+        font-size: 1.6vh;
+    }
+    #popUpGoogle{
+        background-color: #60AAAD;
+        border: none;
+        align-self: center;
+        margin-bottom: 3vh;
+    }
+    img{
+        width: 5vh;
+        align-items: center;
+    }
+}
+@media (min-width:700px) and (max-width:1000px){
+    .formLogin{
+        display: flex;
+        flex-direction: column;
+    }
+    .titLogin {
+        font-family: 'Alegreya SC', serif;
+        font-size: 3.5vh;
+        color:aliceblue;
+        text-align: center; 
+        margin-top:8vh;
+    }
+    #labelEmail{
+        font-family:'Alice', serif;
+        color: #f0f8ff;
+        font-size: 2.5vh;
+        text-align: center;
+        margin-top: 6vh;
+    } 
+    #labelPassword {
+        font-family:'Alice', serif;
+        color: #f0f8ff;
+        align-self: center;
+        font-size: 2.5vh;
+        margin-bottom: 1vh;
+    }
+    #inputEmail{
+        align-self: center;
+        background-color: #0e54567f;
+        border-color: #fe942b;
+        border-radius: 1vh;
+        border-style:outset;
+        margin-bottom: 5vh;
+        margin-top: 1vh;
+        height: 2.8vh;
+        width: 35vh;
+    } 
+    #inputEmail::placeholder{
+        color:antiquewhite ;
+    }
+    #inputPassword {
+        align-self: center;
+        background-color: #0e54567f;
+        border-color: #fe942b;
+        border-radius: 1vh;
+        border-style:outset;
+        width: 25vh;
+        height: 2.8vh;
+    
+    }
+    #inputPassword::placeholder{
+        color: antiquewhite;
+    }
+    #botaoLogin{
+        margin-top: 5vh;
+        margin-bottom: 3vh;
+        background-color: #0e54567f;
+        border-color: #fe942b;
+        border-radius: 1vh;
+        border-style:outset;
+        font-family:'Alice', serif;
+        color:aliceblue;
+        font-size: 2vh;
+        width: 10vh;
+        height: 2.8vh;
+        align-self: center ;
+    }
+    #pCadLogin{
+        font-family:'Alice', serif;
+        color: aliceblue;
+        margin-top: 3vh;
+        text-align: center;
+    }
+    #linkCadLogin{
+        color:#03585b;
+    }
+    .popUp{
+        display: flex;
+        flex-direction: column;
+    }
+    #pPopUp{
+        font-family:'Alice', serif;
+        color: #03585b;
+        text-align: center;
+        font-size: 1.6vh;
+    }
+    #popUpGoogle{
+        background-color: #60AAAD;
+        border: none;
+        align-self: center;
+        margin-bottom: 3vh;
+    }
+    img{
+        width: 5vh;
+        align-items: center;
+    }
+}
+@media (min-width:1000px) and (max-width:2000px){
+    .formLogin{
+        display: flex;
+        flex-direction: column;
+    }
+    .titLogin {
+        font-family: 'Alegreya SC', serif;
+        font-size: 3.5vh;
+        color:aliceblue;
+        text-align: center; 
+        margin-top:8vh;
+    }
+    #labelEmail{
+        font-family:'Alice', serif;
+        color: #f0f8ff;
+        font-size: 2.5vh;
+        text-align: center;
+        margin-top: 6vh;
+    } 
+    #labelPassword {
+        font-family:'Alice', serif;
+        color: #f0f8ff;
+        align-self: center;
+        font-size: 2.5vh;
+        margin-bottom: 1vh;
+    }
+    #inputEmail{
+        align-self: center;
+        background-color: #0e54567f;
+        border-color: #fe942b;
+        border-radius: 1vh;
+        border-style:outset;
+        margin-bottom: 5vh;
+        margin-top: 1vh;
+        height: 2.8vh;
+        width: 35vh;
+    } 
+    #inputEmail::placeholder{
+        color:antiquewhite ;
+    }
+    #inputPassword {
+        align-self: center;
+        background-color: #0e54567f;
+        border-color: #fe942b;
+        border-radius: 1vh;
+        border-style:outset;
+        width: 25vh;
+        height: 2.8vh;
+    
+    }
+    #inputPassword::placeholder{
+        color: antiquewhite;
+    }
+    #botaoLogin{
+        margin-top: 5vh;
+        margin-bottom: 3vh;
+        background-color: #0e54567f;
+        border-color: #fe942b;
+        border-radius: 1vh;
+        border-style:outset;
+        font-family:'Alice', serif;
+        color:aliceblue;
+        font-size: 2vh;
+        width: 10vh;
+        height: 2.8vh;
+        align-self: center ;
+    }
+    #pCadLogin{
+        font-family:'Alice', serif;
+        color: aliceblue;
+        margin-top: 3vh;
+        text-align: center;
+    }
+    #linkCadLogin{
+        color:#03585b;
+    }
+    .popUp{
+        display: flex;
+        flex-direction: column;
+    }
+    #pPopUp{
+        font-family:'Alice', serif;
+        color: #03585b;
+        text-align: center;
+        font-size: 1.6vh;
+    }
+    #popUpGoogle{
+        background-color: #60AAAD;
+        border: none;
+        align-self: center;
+        margin-bottom: 3vh;
+    }
+    img{
+        width: 5vh;
+        align-items: center;
+    }
 }

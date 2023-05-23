@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Alice&family=Carme&family=Carter+One&family=Monoton&display=swap');
-@media (min-width:0px) and (max-width: 400px) {
+
+@media (max-width: 500px) {
 .formFeed {
     display: flex;
     flex-direction: column;
@@ -7,7 +8,7 @@
 }
 #titFeed {
     font-family:'Alegreya SC', serif;
-    font-size: 2.5vh;
+    font-size: 1.8vh;
     text-align: center;
     color: aliceblue;
 }
@@ -15,27 +16,32 @@
     text-align: center;
     font-family: 'Alice', serif;
     color: #f0f8ff;
-    font-size: 1.8vh;
+    font-size: 1.4vh;
     margin-bottom: 1.5vh;
 }
 #inputFeed {
     align-self: center;
-    background-color: #ff952aa9;
-    border-color: #0a767a;
+    background-color: #0a767a;
+    border-color: #ff952aa9;
     border-radius: 1vh;
     border-style:solid;
-    width: 35vh;
+    width: 25vh;
     height: 10vh;
+}
+#inputFeed::placeholder{
+    color:antiquewhite;
 }
 #botaoFeed {
     margin-top: 3vh;
-    background-color: #ff952aa9;
-    border-color: #0a767a;
+    background-color: #0a767acb;
+    border-color: #ff952aa9;
     border-radius: 1vh;
     border-style:solid;
     font-family:'Carter One';
+    font-size: 1.6vh;
     color:aliceblue;
-    width: 8vh;
+    width: 10vh;
+    height: 3vh;
     align-self: center;
     margin-bottom: 1vh;
 }
@@ -43,34 +49,17 @@
     display: flex;
     flex-direction: column;
 }
-#boxPost{
-    background-color: #ff952aa9;
-    border-color: #0a767a;
-    border-radius: 1vh;
-    border-style:solid;
-    margin-bottom: 2vh;
-    width: 35vh;
-    margin-right: 4vh;
-}
 #nomeUser{
     font-family: 'Alegreya SC', serif;
     margin-top: 0.2vh;
     margin-left: 1vh;
-    margin-bottom: -2vh;
     color:aliceblue;
 }
 textarea{
-    background-color: #ff952a00;
+    background-color: #60AAAD;
     border: none;
     font-family: 'Alice', serif;
-    color:rgb(42, 55, 55);
-    margin-left: 1vh;
-}
-textarea{
-    background-color: #ff952a00;
-    border: none;
-    font-family: 'Alice', serif;
-    color:rgb(42, 55, 55);
+    color:antiquewhite;
     font-size: 1.6vh;
 }
 #boxPost{
@@ -79,19 +68,17 @@ textarea{
     justify-content: space-around;
 }
 #editarPost, #salvarPost, #apagarPost{
-    background-color: #ff952aa9;
-    border-color: #0a767a;
+    background-color: #0a767ad3;
+    border-color: #ff952aa9;
     border-radius: 1vh;
     border-style:solid;
     width: 5vh;
     align-self: center;
-}
-img{
-    width: 3vh;
-    align-items: center;
+    z-index: 999;
 }
 }
-@media (min-width: 400px) and (max-width:700px) {
+/* 500px - 700px */
+@media (min-width: 500px) and (max-width:700px) {
     .formFeed {
         display: flex;
         flex-direction: column;
@@ -108,22 +95,24 @@ img{
         font-family: 'Alice', serif;
         color: #f0f8ff;
         font-size: 18px;
-        
     }
     #inputFeed{
         align-self: center;
-        background-color: #ff952aa9;
-        border-color: #0a767a;
+        background-color: #0a767a;
+        border-color: #ff952aa9;
         border-radius: 1vh;
         border-style:solid;
         width: 40vh;
         height: 7vh;
         margin-top: 1vh;
     }
+    #inputFeed::placeholder{
+        color:antiquewhite;
+    }
     #botaoFeed {
         margin-top: 2vh;
-        background-color: #ff952aa9;
-        border-color: #0a767a;
+        background-color: #0a767a;
+        border-color: #ff952aa9;
         border-radius: 1vh;
         border-style:solid;
         font-family:'Carter One';
@@ -137,13 +126,12 @@ img{
         flex-direction: column;
     }
     #postCompleto{
-        background-color: #ff952aa9;
-        border-color: #0a767a;
+        background-color: #0a767a;
+        border-color: #ff952aa9;
         border-radius: 1vh;
         border-style:solid;
         margin-bottom: 2vh;
         width: 40vh;
-        margin-left: 1.5vh;
     }
     #nomeUser{
         font-family: 'Alegreya SC', serif;
@@ -152,10 +140,10 @@ img{
         color:aliceblue;
     }
    textarea{
-        background-color: #ff952a00;
+        background-color: #ffffff00;
         border: none;
         font-family: 'Alice', serif;
-        color:rgb(42, 55, 55);
+        color:antiquewhite;
         font-size: 1.6vh;
    }
    #boxPost{
@@ -164,8 +152,8 @@ img{
         justify-content: space-around;
    }
    #editarPost, #salvarPost, #apagarPost{
-        background-color: #ff952aa9;
-        border-color: #0a767a;
+        background-color: #0a767a;
+        border-color: #ff952aa9;
         border-radius: 1vh;
         border-style:solid;
         width: 5vh;
@@ -176,7 +164,8 @@ img{
         align-items: center;
 }
 }
-@media (min-width: 700px) and (max-width:2000px) {
+/* 700px - 1000px */
+@media (min-width: 700px) and (max-width:1000px) {
     .formFeed {
         display: flex;
         flex-direction: column;
@@ -197,18 +186,21 @@ img{
     }
     #inputFeed{
         align-self: center;
-        background-color: #ff952aa9;
-        border-color: #0a767a;
+        background-color: #0a767a;
+        border-color: #ff952aa9;
         border-radius: 1vh;
         border-style:solid;
         width: 40vh;
         height: 7vh;
         margin-top: 1vh;
     }
+    #inputFeed::placeholder{
+        color:antiquewhite;
+    }
     #botaoFeed {
         margin-top: 2vh;
-        background-color: #ff952aa9;
-        border-color: #0a767a;
+        background-color: #0a767a;
+        border-color: #ff952aa9;
         border-radius: 1vh;
         border-style:solid;
         font-family:'Carter One';
@@ -222,13 +214,12 @@ img{
         flex-direction: column;
     }
     #postCompleto{
-        background-color: #ff952aa9;
-        border-color: #0a767a;
+        background-color: #0a767a;
+        border-color: #ff952aa9;
         border-radius: 1vh;
         border-style:solid;
         margin-bottom: 2vh;
         width: 40vh;
-        margin-left: 1.5vh;
     }
     #nomeUser{
         font-family: 'Alegreya SC', serif;
@@ -240,7 +231,7 @@ img{
         background-color: #ff952a00;
         border: none;
         font-family: 'Alice', serif;
-        color:rgb(42, 55, 55);
+        color:antiquewhite;
         font-size: 1.6vh;
    }
    #boxPost{
@@ -249,8 +240,100 @@ img{
         justify-content: space-around;
    }
    #editarPost, #salvarPost, #apagarPost{
-        background-color: #ff952aa9;
-        border-color: #0a767a;
+        background-color: #0a767a;
+        border-color: #ff952aa9;
+        border-radius: 1vh;
+        border-style:solid;
+        width: 5vh;
+        align-self: center;
+   }
+   img{
+        width: 3vh;
+        align-items: center;
+}
+}
+
+/* 1000px - 2000px */
+@media (min-width: 1000px) and (max-width:2000px) {
+    .formFeed {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #titFeed {
+        font-family:'Alegreya SC', serif;
+        text-align: center;
+        color: aliceblue;
+        font-size: 30px;
+    }
+    #postFeed{
+        text-align: center;
+        font-family: 'Alice', serif;
+        color: #f0f8ff;
+        font-size: 18px;
+        
+    }
+    #inputFeed{
+        align-self: center;
+        background-color: #0a767a;
+        border-color: #ff952aa9;
+        border-radius: 1vh;
+        border-style:solid;
+        width: 40vh;
+        height: 7vh;
+        margin-top: 1vh;
+    }
+    #inputFeed::placeholder{
+        color:antiquewhite;
+    }
+    #botaoFeed {
+        margin-top: 2vh;
+        background-color: #0a767a;
+        border-color: #ff952aa9;
+        border-radius: 1vh;
+        border-style:solid;
+        font-family:'Carter One';
+        color:aliceblue;
+        width: 10vh;
+        align-self: center;
+        margin-bottom: 1vh;
+    }
+    #feedComPosts{
+        display: flex;
+        flex-direction: column;
+    }
+    #postCompleto{
+        background-color: #0a767a;
+        border-color: #ff952aa9;
+        border-radius: 1vh;
+        border-style:solid;
+        margin-bottom: 2vh;
+        width: 40vh;
+        align-self: center;
+        margin-right: 3vh;
+    }
+    #nomeUser{
+        font-family: 'Alegreya SC', serif;
+        margin-top: 0.2vh;
+        margin-left: 1vh;
+        color:aliceblue;
+    }
+   textarea{
+        background-color: #ff952a00;
+        border: none;
+        font-family: 'Alice', serif;
+        color:antiquewhite;
+        font-size: 1.6vh;
+   }
+   
+   #boxPost{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+   }
+   #editarPost, #salvarPost, #apagarPost{
+        background-color: #0a767a;
+        border-color: #ff952aa9;
         border-radius: 1vh;
         border-style:solid;
         width: 5vh;
