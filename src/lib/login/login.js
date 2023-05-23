@@ -27,7 +27,6 @@ export default () => {
 </section>
 
   <p id="pCadLogin"> Ainda não possui conta? <a id="linkCadLogin" href="/#cadastro">Cadastre-se </a></p>
-<link rel="stylesheet" href="./lib/login/login.css"></link>
   `;
 
   container.innerHTML = template;

@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Alice&family=Carme&family=Carter+One&family=Monoton&display=swap');
+@import url(./lib/cadastro/cadastro.css);
+@import url(./lib/feed/feed.css);
+@import url(./lib/login/login.css);
+@import url(./lib/about/about.css);
 
-
+@media (max-width: 400px) {
 body{
-    max-width: 400px;
     background-color: #60AAAD;
 }
 
@@ -77,7 +80,6 @@ footer{
     justify-content: center;    
 }
 .footer{
-    margin-top: 5vh;
     background-color: #60AAAD;
     width: 100%;
     font-family: 'Alegreya SC', serif;
@@ -85,4 +87,91 @@ footer{
 }
 a{
    color: #03585b; 
+}
+}
+@media (min-width: 400px) and (max-width:700px) {
+    body{
+        background-color: #60AAAD;
+    }
+    .header{
+        display: flex;
+        background-color:#60AAAD;
+        background-attachment: fixed;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3vh;
+     }
+     .tituloHeader{
+        font-family:'Monoton', cursive;
+        font-size: 34px;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 0.5vh;
+        color: aliceblue;
+    }
+    .pHeader{
+        font-family: 'Alegreya SC', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 8px;
+        text-align: center;
+        margin-top: -2.3vh;
+        margin-bottom: 1.2vh;
+        color:aliceblue;
+     }
+     .menu{
+        background-color: #FF952A;
+        border-color: #0a767a;
+        border-style: solid;
+        margin-top: -1.3vh;
+        margin-left: -2vh;
+        margin-right: -2vh;
+        display: flex;
+        flex-flow: row wrap;
+        height: 4vh;
+        justify-content: space-around;
+    }
+    .lista{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0; 
+        margin-right: 5vh;
+     }
+     .links{
+        flex:1;
+        text-align:center;
+        flex-direction: row;
+        margin-top: 0.2vh;
+        margin-left: 5vh;
+        font-family:'Alegreya SC', serif;
+        font-size: 20px;
+    }
+    #linkSpa{
+        color:aliceblue;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+    
+    }
+    footer{
+        display: flex;
+        justify-content: center;    
+    }
+    .footer{
+        background-color: #60AAAD;
+        width: 100%;
+        font-family: 'Alegreya SC', serif;
+        color:aliceblue;
+    }
+    a{
+        color: #03585b; 
+     }
+}
+@media (min-width: 700px) and (max-width:2000px) {
+    body{
+        background-color: #60AAAD;
+    }
 }
