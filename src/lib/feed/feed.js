@@ -14,6 +14,7 @@ export default () => {
      <textarea id="inputFeed" type="textarea" name="postagem" placeholder="escreva seu post" ></textarea>
      <input id="botaoFeed" type="submit" value="Enviar"> 
      </form>
+     <p id="mensagem"></p>
    <section id="tdsPosts">
    <ul id="feedComPosts"></ul>
    </section>
@@ -37,6 +38,7 @@ export default () => {
       textarea.removeAttribute('disabled');
     }
     if (apagarId) {
+      // eslint-disable-next-line no-alert
       if (window.confirm('Deseja mesmo apagar?')) {
         deletarPost(apagarId);
       }
@@ -77,7 +79,8 @@ export default () => {
         })
         .catch((error) => error);
     } else {
-      alert('O post não pode ser enviado sem conteúdo!');
+      const mensagem = containerFeed.querySelector('#mensagem');
+      mensagem.innerHTML = 'O post não deve ser enviado vazio';
     }
   });
 

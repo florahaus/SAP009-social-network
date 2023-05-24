@@ -6,7 +6,6 @@ import {
   signInWithPopup,
   updateProfile,
   onAuthStateChanged,
-  signOut,
 } from 'firebase/auth';
 import { app } from './firebase.js';
 
@@ -42,9 +41,6 @@ function nomeAtual(nome) {
     displayName: nome,
   });
 }
-//  fazer signOut
-
-const fazerLogout = () => signOut(auth, provider);
 
 export {
   auth,
@@ -53,5 +49,4 @@ export {
   cadastro,
   nomeAtual,
   verificarLogado,
-  fazerLogout,
 };

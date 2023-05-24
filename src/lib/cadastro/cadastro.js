@@ -18,6 +18,8 @@ export default () => {
      <button input id="botaoPagCad" type="submit" value="Enviar"> Cadastrar </button>
     </form>
   
+    <p id='msgError'></p>
+  
     <p id="pPagCad"> Ir para <a id="linkPagLogin" href="/#login">Login </a></p>
     `;
   containerCad.innerHTML = templateCad;
@@ -32,11 +34,11 @@ export default () => {
     cadastro(emailCad.value, passwordCad.value)
       .then(() => {
         nomeAtual(nome.value);
-        alert('sua conta foi criada!');
         window.location.hash = '#login';
       })
-      .catch((error) => {
-        alert(error);
+      .catch(() => {
+        const msgError = containerCad.querySelector('#msgError');
+        msgError.innerHTML = 'seu cadastro não foi efetuado';
       });
   });
 

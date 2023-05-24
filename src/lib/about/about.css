@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Carme&family=Carter+One&family=Monoton&display=swap');
 #titAbout{
-    font-family: 'Carter One';
+    font-family: 'Alegreya SC', serif;
     font-size: 20px;
     text-align: center;
     color:aliceblue;
@@ -8,7 +8,7 @@
 }
  #pAbout{
     align-self: center;
-    font-family:'Carter One';
+    font-family:'Alegreya SC', serif;
     color: #f0f8ff;
     margin-top: 2vh;
     margin-bottom: 65vh;

@@ -1,7 +1,7 @@
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
-// import { addDoc } from 'firebase/firestore';
-import { login, cadastro } from '../src/firebase/firebaseLogin.js';
-// import { addPost, mostrarPosts, atualizarPost } from '../src/firebase/firestore.js';
+import { addDoc, signInWithPopup } from 'firebase/firestore';
+import { login, cadastro, loginGoogle } from '../src/firebase/firebaseLogin.js';
+import { addPost } from '../src/firebase/firestore.js';
 
 jest.mock('firebase/auth');
 describe('testes de autenticação', () => {
@@ -23,13 +23,21 @@ describe('testes de autenticação', () => {
     expect(createUserWithEmailAndPassword).toHaveBeenCalledWith(undefined, emailCad, passwordCad);
   });
 });
-// jest.mock('firebase/auth');
-// describe('teste de post'), () => {
-//   it('deveria adicionar post na coleção', () => {
-//     addDoc.mock('conteudo', 'displayName');
-//     const conteudo = 'oi, esse é um teste';
-//     const displayName = 'Flora';
-//     addPost(conteudo, displayName);
-//     expect(addPost).toHaveBeenCalledWith(conteudo, displayName);
-//   });
-// };
+
+describe('teste de post', () => {
+  it('deveria adicionar post na coleção', () => {
+    addDoc.mockResolvedValueOnce('conteudo', 'displayName');
+    const conteudo = 'oi, esse é um teste';
+    const displayName = 'Flora';
+    addPost(conteudo, displayName);
+    expect(addPost).toHaveBeenCalledWith(conteudo, displayName);
+  });
+});
+
+test('Deve redirecionar para "#feed" após o login', () => {
+  signInWithPopup.mockResolvedValueOnce();
+  window.location.hash = ''; // Define a hash vazia antes de chamar a função
+  loginGoogle();
+  expect(signInWithPopup).toHaveBeenCalled(1);
+  expect(window.location.hash).toBe('#feed');
+});
