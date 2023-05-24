@@ -75,6 +75,11 @@
  #linkPagLogin{
     color:#03585b;
 }
+#msgError{
+    text-align: center;
+    font-family: 'Alegreya SC', serif;
+    color: rgb(72, 11, 11);
+}
 }
 
 @media (min-width:500px) and (max-width:700px) {
@@ -145,6 +150,11 @@
 }
  #linkPagLogin{
     color:#03585b;
+}
+#msgError{
+    text-align: center;
+    font-family: 'Alegreya SC', serif;
+    color: rgb(72, 11, 11);
 }
 }
 
@@ -218,6 +228,11 @@
  #linkPagLogin{
     color:#03585b;
 }
+#msgError{
+    text-align: center;
+    font-family: 'Alegreya SC', serif;
+    color: rgb(72, 11, 11);
+}
 }
 @media (min-width:1000px) and (max-width:2000px) {
     .formPagCad{
@@ -288,5 +303,10 @@
     }
      #linkPagLogin{
         color:#03585b;
+    }
+    #msgError{
+        text-align: center;
+        font-family: 'Alegreya SC', serif;
+        color: rgb(72, 11, 11);
     }
     }
