@@ -1,0 +1,1297 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Alice&family=Carme&family=Carter+One&family=Monoton&display=swap');@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Alice&family=Carme&family=Carter+One&family=Monoton&display=swap');@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Alice&family=Carme&family=Carter+One&family=Monoton&display=swap');@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Alice&family=Carme&family=Carter+One&family=Monoton&display=swap');@import url('https://fonts.googleapis.com/css2?family=Carme&family=Carter+One&family=Monoton&display=swap');
+
+
+
+
+@media (max-width:500px) {
+.formPagCad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#titPagCad{
+    font-family: 'Alegreya SC', serif;
+    font-size: 3vh;
+    text-align: center;
+    color:aliceblue;
+    
+}
+#labelNome, #labelEmailCad, #labelPasswordCad{
+    text-align: center;
+    font-family:'Alice', serif;
+    font-size:1.8vh;
+    color: #f0f8ff;
+    margin-top: 3vh;
+}
+
+#inputNome, #inputEmailCad{
+    align-self: center;
+    background-color: #0e54567f;
+    border-color: #fe942b;
+    border-radius: 1vh;
+    border-style:solid;
+    margin-bottom: 5vh;
+    margin-top: 1vh;
+    height: 3vh;
+    width: 35vh;
+}
+
+ #inputPasswordCad{
+    align-self: center;
+    background-color: #0e54567f;
+    border-color: #fe942b;
+    border-radius: 10px;
+    border-style: double;
+    width: 25vh;
+    height: 3vh;
+    margin-top: 1vh;
+
+}
+#inputNome::placeholder{
+    color: antiquewhite;
+}
+#inputEmailCad::placeholder{
+    color: antiquewhite;
+}
+
+#inputPasswordCad::placeholder {
+    color: antiquewhite;
+}
+#botaoPagCad{
+    margin: 2vh;
+    background-color: #0e54567f;
+    border-color: #fe942b;
+    border-radius: 10px;
+    border-style: double;
+    font-family:'Alice', serif;
+    color:aliceblue;
+    width: 10vh;
+    height: 3vh;
+    align-self: center;
+    
+}
+#pPagCad{
+    font-family:'Alice', serif;
+    color: aliceblue;
+    text-align: center;
+}
+ #linkPagLogin{
+    color:#03585b;
+}
+#msgError{
+    text-align: center;
+    font-family: 'Alegreya SC', serif;
+    color: rgb(72, 11, 11);
+}
+}
+@media (min-width:500px) and (max-width:700px) {
+.formPagCad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#titPagCad{
+    font-family: 'Alegreya SC', serif;
+    font-size: 3vh;
+    text-align: center;
+    color:aliceblue;
+}
+#labelNome{
+    text-align: center;
+    font-family:'Alice', serif;
+    font-size:1.8vh;
+    color: #f0f8ff;
+    margin-top: 3vh;
+}
+#labelEmailCad, #labelPasswordCad{
+    text-align: center;
+    font-family:'Alice', serif;
+    color: #f0f8ff;
+    font-size: 2vh;
+} 
+
+#inputNome, #inputPasswordCad,#inputEmailCad{
+    align-self: center;
+    background-color: #0e54567f;
+    border-color: #fe942b;
+    border-radius: 1vh;
+    border-style:solid;
+    margin-bottom: 3vh;
+    margin-top: 1vh;
+    height: 3vh;
+    width: 35vh;
+}
+#inputNome::placeholder{
+    color: antiquewhite;
+}
+#inputEmailCad::placeholder{
+    color: antiquewhite;
+}
+
+#inputPasswordCad::placeholder {
+    color: antiquewhite;
+}
+
+#botaoPagCad{
+    margin: 2vh;
+    background-color: #0e54567f;
+    border-color: #fe942b;
+    border-radius: 10px;
+    border-style: double;
+    font-family:'Alice', serif;
+    color:aliceblue;
+    width: 10vh;
+    height: 3vh;
+    align-self: center;
+    
+}
+#pPagCad{
+    font-family:'Alice', serif;
+    color: aliceblue;
+    text-align: center;
+}
+ #linkPagLogin{
+    color:#03585b;
+}
+#msgError{
+    text-align: center;
+    font-family: 'Alegreya SC', serif;
+    color: rgb(72, 11, 11);
+}
+}
+@media (min-width:700px) and (max-width:1000px) {
+.formPagCad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#titPagCad{
+    font-family: 'Alegreya SC', serif;
+    font-size: 3vh;
+    text-align: center;
+    color:aliceblue;
+    
+}
+#labelNome{
+    text-align: center;
+    font-family:'Alice', serif;
+    font-size:1.8vh;
+    color: #f0f8ff;
+    margin-top: 3vh;
+}
+
+#labelPasswordCad, #labelEmailCad{
+    text-align: center;
+    font-family:'Alice', serif;
+    color: #f0f8ff;
+    font-size: 2vh;
+}
+#inputNome, #inputEmailCad,#inputPasswordCad{
+    align-self: center;
+    background-color: #0e54567f;
+    border-color: #fe942b;
+    border-radius: 1vh;
+    border-style:solid;
+    margin-bottom: 5vh;
+    margin-top: 1vh;
+    height: 3vh;
+    width: 35vh;
+}
+
+#inputNome::placeholder{
+    color: antiquewhite;
+}
+#inputEmailCad::placeholder{
+    color: antiquewhite;
+}
+
+#inputPasswordCad::placeholder {
+    color: antiquewhite;
+}
+#botaoPagCad{
+    margin: 2vh;
+    background-color: #0e54567f;
+    border-color: #fe942b;
+    border-radius: 10px;
+    border-style: double;
+    font-family:'Alice', serif;
+    color:aliceblue;
+    width: 10vh;
+    height: 3vh;
+    align-self: center;
+}
+#pPagCad{
+    font-family:'Alice', serif;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 5vh;
+}
+ #linkPagLogin{
+    color:#03585b;
+}
+#msgError{
+    text-align: center;
+    font-family: 'Alegreya SC', serif;
+    color: rgb(72, 11, 11);
+}
+}
+@media (min-width:1000px) and (max-width:2000px) {
+    .formPagCad{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #titPagCad{
+        font-family: 'Alegreya SC', serif;
+        font-size: 3vh;
+        text-align: center;
+        color:aliceblue;
+        
+    }
+    #labelNome{
+        text-align: center;
+        font-family:'Alice', serif;
+        font-size:1.8vh;
+        color: #f0f8ff;
+        margin-top: 3vh;
+    }
+    
+    #labelPasswordCad, #labelEmailCad{
+        text-align: center;
+        font-family:'Alice', serif;
+        color: #f0f8ff;
+        font-size: 2vh;
+    }
+    #inputNome, #inputEmailCad,#inputPasswordCad{
+        align-self: center;
+        background-color: #0e54567f;
+        border-color: #fe942b;
+        border-radius: 1vh;
+        border-style:solid;
+        margin-bottom: 5vh;
+        margin-top: 1vh;
+        height: 3vh;
+        width: 35vh;
+    }
+    
+    #inputNome::placeholder{
+        color: antiquewhite;
+    }
+    #inputEmailCad::placeholder{
+        color: antiquewhite;
+    }
+    
+    #inputPasswordCad::placeholder {
+        color: antiquewhite;
+    }
+    #botaoPagCad{
+        margin: 2vh;
+        background-color: #0e54567f;
+        border-color: #fe942b;
+        border-radius: 10px;
+        border-style: double;
+        font-family:'Alice', serif;
+        color:aliceblue;
+        width: 10vh;
+        height: 3vh;
+        align-self: center;
+    }
+    #pPagCad{
+        font-family:'Alice', serif;
+        color: aliceblue;
+        text-align: center;
+        margin-top: 5vh;
+    }
+     #linkPagLogin{
+        color:#03585b;
+    }
+    #msgError{
+        text-align: center;
+        font-family: 'Alegreya SC', serif;
+        color: rgb(72, 11, 11);
+    }
+    }
+@media (max-width: 500px) {
+.formFeed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#titFeed {
+    font-family:'Alegreya SC', serif;
+    font-size: 1.8vh;
+    text-align: center;
+    color: aliceblue;
+}
+#postFeed {
+    text-align: center;
+    font-family: 'Alice', serif;
+    color: #f0f8ff;
+    font-size: 1.4vh;
+    margin-bottom: 1.5vh;
+}
+#inputFeed {
+    align-self: center;
+    background-color: #0a767a;
+    border-color: #ff952aa9;
+    border-radius: 1vh;
+    border-style:solid;
+    width: 25vh;
+    height: 10vh;
+}
+#inputFeed::placeholder{
+    color:antiquewhite;
+}
+#botaoFeed {
+    margin-top: 3vh;
+    background-color: #0a767acb;
+    border-color: #ff952aa9;
+    border-radius: 1vh;
+    border-style:solid;
+    font-family:'Alegreya SC', serif;
+    font-size: 1.6vh;
+    color:aliceblue;
+    width: 10vh;
+    height: 3vh;
+    align-self: center;
+    margin-bottom: 1vh;
+}
+#feedComPosts{
+    display: flex;
+    flex-direction: column;
+}
+#nomeUser{
+    font-family: 'Alegreya SC', serif;
+    margin-top: 0.2vh;
+    margin-left: 1vh;
+    color:aliceblue;
+}
+textarea{
+    background-color: #60AAAD;
+    border: none;
+    font-family: 'Alice', serif;
+    color:antiquewhite;
+    font-size: 1.6vh;
+}
+#boxPost{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#editarPost, #salvarPost, #apagarPost{
+    background-color: #0a767ad3;
+    border-color: #ff952aa9;
+    border-radius: 1vh;
+    border-style:solid;
+    width: 5vh;
+    align-self: center;
+    z-index: 999;
+}
+}
+/* 500px - 700px */
+@media (min-width: 500px) and (max-width:700px) {
+    .formFeed {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #titFeed {
+        font-family:'Alegreya SC', serif;
+        text-align: center;
+        color: aliceblue;
+        font-size: 30px;
+    }
+    #postFeed{
+        text-align: center;
+        font-family: 'Alice', serif;
+        color: #f0f8ff;
+        font-size: 18px;
+    }
+    #inputFeed{
+        align-self: center;
+        background-color: #0a767a;
+        border-color: #ff952aa9;
+        border-radius: 1vh;
+        border-style:solid;
+        width: 40vh;
+        height: 7vh;
+        margin-top: 1vh;
+    }
+    #inputFeed::placeholder{
+        color:antiquewhite;
+    }
+    #botaoFeed {
+        margin-top: 2vh;
+        background-color: #0a767a;
+        border-color: #ff952aa9;
+        border-radius: 1vh;
+        border-style:solid;
+        font-family:'Alegreya SC', serif;
+        color:aliceblue;
+        width: 10vh;
+        align-self: center;
+        margin-bottom: 1vh;
+    }
+    #feedComPosts{
+        display: flex;
+        flex-direction: column;
+    }
+    #postCompleto{
+        background-color: #0a767a;
+        border-color: #ff952aa9;
+        border-radius: 1vh;
+        border-style:solid;
+        margin-bottom: 2vh;
+        width: 40vh;
+    }
+    #nomeUser{
+        font-family: 'Alegreya SC', serif;
+        margin-top: 0.2vh;
+        margin-left: 1vh;
+        color:aliceblue;
+    }
+   textarea{
+        background-color: #ffffff00;
+        border: none;
+        font-family: 'Alice', serif;
+        color:antiquewhite;
+        font-size: 1.6vh;
+   }
+   #boxPost{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+   }
+   #editarPost, #salvarPost, #apagarPost{
+        background-color: #0a767a;
+        border-color: #ff952aa9;
+        border-radius: 1vh;
+        border-style:solid;
+        width: 5vh;
+        align-self: center;
+   }
+   img{
+        width: 3vh;
+        align-items: center;
+}
+}
+/* 700px - 1000px */
+@media (min-width: 700px) and (max-width:1000px) {
+    .formFeed {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #titFeed {
+        font-family:'Alegreya SC', serif;
+        text-align: center;
+        color: aliceblue;
+        font-size: 30px;
+    }
+    #postFeed{
+        text-align: center;
+        font-family: 'Alice', serif;
+        color: #f0f8ff;
+        font-size: 18px;
+        
+    }
+    #inputFeed{
+        align-self: center;
+        background-color: #0a767a;
+        border-color: #ff952aa9;
+        border-radius: 1vh;
+        border-style:solid;
+        width: 40vh;
+        height: 7vh;
+        margin-top: 1vh;
+    }
+    #inputFeed::placeholder{
+        color:antiquewhite;
+    }
+    #botaoFeed {
+        margin-top: 2vh;
+        background-color: #0a767a;
+        border-color: #ff952aa9;
+        border-radius: 1vh;
+        border-style:solid;
+        font-family:'Alegreya SC', serif;
+        color:aliceblue;
+        width: 10vh;
+        align-self: center;
+        margin-bottom: 1vh;
+    }
+    #feedComPosts{
+        display: flex;
+        flex-direction: column;
+    }
+    #postCompleto{
+        background-color: #0a767a;
+        border-color: #ff952aa9;
+        border-radius: 1vh;
+        border-style:solid;
+        margin-bottom: 2vh;
+        width: 40vh;
+    }
+    #nomeUser{
+        font-family: 'Alegreya SC', serif;
+        margin-top: 0.2vh;
+        margin-left: 1vh;
+        color:aliceblue;
+    }
+   textarea{
+        background-color: #ff952a00;
+        border: none;
+        font-family: 'Alice', serif;
+        color:antiquewhite;
+        font-size: 1.6vh;
+   }
+   #boxPost{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+   }
+   #editarPost, #salvarPost, #apagarPost{
+        background-color: #0a767a;
+        border-color: #ff952aa9;
+        border-radius: 1vh;
+        border-style:solid;
+        width: 5vh;
+        align-self: center;
+   }
+   img{
+        width: 3vh;
+        align-items: center;
+}
+}
+/* 1000px - 2000px */
+@media (min-width: 1000px) and (max-width:2000px) {
+    .formFeed {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #titFeed {
+        font-family:'Alegreya SC', serif;
+        text-align: center;
+        color: aliceblue;
+        font-size: 30px;
+    }
+    #postFeed{
+        text-align: center;
+        font-family: 'Alice', serif;
+        color: #f0f8ff;
+        font-size: 18px;
+        
+    }
+    #inputFeed{
+        align-self: center;
+        background-color: #0a767a;
+        border-color: #ff952aa9;
+        border-radius: 1vh;
+        border-style:solid;
+        width: 40vh;
+        height: 7vh;
+        margin-top: 1vh;
+    }
+    #inputFeed::placeholder{
+        color:antiquewhite;
+    }
+    #botaoFeed {
+        margin-top: 2vh;
+        background-color: #0a767a;
+        border-color: #ff952aa9;
+        border-radius: 1vh;
+        border-style:solid;
+        font-family:'Alegreya SC', serif;
+        color:aliceblue;
+        width: 10vh;
+        align-self: center;
+        margin-bottom: 1vh;
+    }
+    #feedComPosts{
+        display: flex;
+        flex-direction: column;
+    }
+    #postCompleto{
+        background-color: #0a767a;
+        border-color: #ff952aa9;
+        border-radius: 1vh;
+        border-style:solid;
+        margin-bottom: 2vh;
+        width: 40vh;
+        align-self: center;
+        margin-right: 3vh;
+    }
+    #nomeUser{
+        font-family: 'Alegreya SC', serif;
+        margin-top: 0.2vh;
+        margin-left: 1vh;
+        color:aliceblue;
+    }
+   textarea{
+        background-color: #ff952a00;
+        border: none;
+        font-family: 'Alice', serif;
+        color:antiquewhite;
+        font-size: 1.6vh;
+   }
+   
+   #boxPost{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+   }
+   #editarPost, #salvarPost, #apagarPost{
+        background-color: #0a767a;
+        border-color: #ff952aa9;
+        border-radius: 1vh;
+        border-style:solid;
+        width: 5vh;
+        align-self: center;
+   }
+   img{
+        width: 3vh;
+        align-items: center;
+}
+}
+@media (max-width: 500px) {
+.formLogin{
+    display: flex;
+    flex-direction: column;
+}
+.titLogin {
+    font-family: 'Alegreya SC', serif;
+    font-size: 3vh;
+    color:aliceblue;
+    text-align: center; 
+    margin-top:8vh;
+}
+#labelEmail{
+    font-family:'Alice', serif;
+    color: #f0f8ff;
+    font-size: 2vh;
+    text-align: center;
+    margin-top: 6vh;
+} 
+#labelPassword {
+    font-family:'Alice', serif;
+    color: #f0f8ff;
+    align-self: center;
+    font-size: 2vh;
+    margin-bottom: 1vh;
+}
+#inputEmail{
+    align-self: center;
+    background-color: #0a767a;
+    border-color: #fe942b;
+    border-radius: 1vh;
+    border-style:outset;
+    margin-bottom: 5vh;
+    margin-top: 1vh;
+    height: 2.5vh;
+    width: 35vh;
+} 
+#inputEmail::placeholder{
+    color:antiquewhite;
+}
+#inputPassword {
+    align-self: center;
+    background-color: #0a767a;
+    border-color: #fe942b;
+    border-radius: 1vh;
+    border-style:outset;
+    width: 25vh;
+    height: 2.5vh;
+}
+#inputPassword::placeholder{
+    color:antiquewhite;
+}
+#botaoLogin{
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    background-color: #0a767a;
+    border-color: #fe942b;
+    border-radius: 1vh;
+    border-style:outset;
+    font-family:'Alice', serif;
+    color:aliceblue;
+    font-size: 2vh;
+    width: 10vh;
+    align-self: center ;
+  
+}
+#pCadLogin{
+    font-family:'Alice', serif;
+    color: aliceblue;
+    margin-top: 3vh;
+    margin-left: 3vh;
+}
+#linkCadLogin{
+    color:#03585b;
+}
+.popUp{
+    display: flex;
+    flex-direction: column;
+}
+#pPopUp{
+    font-family:'Alice', serif;
+    color: #03585b;
+    text-align: center;
+    font-size: 1.6vh;
+}
+#popUpGoogle{
+    background-color: #60AAAD;
+    border: none;
+    align-self: center;
+    margin-bottom: 3vh;
+}
+img{
+    width: 5vh;
+    align-items: center;
+}
+}
+@media (min-width: 500px) and (max-width:700px) {
+    .formLogin{
+        display: flex;
+        flex-direction: column;
+    }
+    .titLogin {
+        font-family: 'Alegreya SC', serif;
+        font-size: 3.5vh;
+        color:aliceblue;
+        text-align: center; 
+        margin-top:8vh;
+    }
+    #labelEmail{
+        font-family:'Alice', serif;
+        color: #f0f8ff;
+        font-size: 2.5vh;
+        text-align: center;
+        margin-top: 6vh;
+    } 
+    #labelPassword {
+        font-family:'Alice', serif;
+        color: #f0f8ff;
+        align-self: center;
+        font-size: 2.5vh;
+        margin-bottom: 1vh;
+    }
+    #inputEmail{
+        align-self: center;
+        background-color: #0e54567f;
+        border-color: #fe942b;
+        border-radius: 1vh;
+        border-style:outset;
+        margin-bottom: 5vh;
+        margin-top: 1vh;
+        height: 2.8vh;
+        width: 35vh;
+    } 
+    #inputEmail::placeholder{
+        color:antiquewhite ;
+    }
+    #inputPassword {
+        align-self: center;
+        background-color: #0e54567f;
+        border-color: #fe942b;
+        border-radius: 1vh;
+        border-style:outset;
+        width: 25vh;
+        height: 2.8vh;
+    
+    }
+    #inputPassword::placeholder{
+        color: antiquewhite;
+    }
+    #botaoLogin{
+        margin-top: 5vh;
+        margin-bottom: 3vh;
+        background-color: #0e54567f;
+        border-color: #fe942b;
+        border-radius: 1vh;
+        border-style:outset;
+        font-family:'Alice', serif;
+        color:aliceblue;
+        font-size: 2vh;
+        width: 10vh;
+        height: 2.8vh;
+        align-self: center ;
+    }
+    #pCadLogin{
+        font-family:'Alice', serif;
+        color: aliceblue;
+        margin-top: 3vh;
+        text-align: center;
+    }
+    #linkCadLogin{
+        color:#03585b;
+    }
+    .popUp{
+        display: flex;
+        flex-direction: column;
+    }
+    #pPopUp{
+        font-family:'Alice', serif;
+        color: #03585b;
+        text-align: center;
+        font-size: 1.6vh;
+    }
+    #popUpGoogle{
+        background-color: #60AAAD;
+        border: none;
+        align-self: center;
+        margin-bottom: 3vh;
+    }
+    img{
+        width: 5vh;
+        align-items: center;
+    }
+}
+@media (min-width:700px) and (max-width:1000px){
+    .formLogin{
+        display: flex;
+        flex-direction: column;
+    }
+    .titLogin {
+        font-family: 'Alegreya SC', serif;
+        font-size: 3.5vh;
+        color:aliceblue;
+        text-align: center; 
+        margin-top:8vh;
+    }
+    #labelEmail{
+        font-family:'Alice', serif;
+        color: #f0f8ff;
+        font-size: 2.5vh;
+        text-align: center;
+        margin-top: 6vh;
+    } 
+    #labelPassword {
+        font-family:'Alice', serif;
+        color: #f0f8ff;
+        align-self: center;
+        font-size: 2.5vh;
+        margin-bottom: 1vh;
+    }
+    #inputEmail{
+        align-self: center;
+        background-color: #0e54567f;
+        border-color: #fe942b;
+        border-radius: 1vh;
+        border-style:outset;
+        margin-bottom: 5vh;
+        margin-top: 1vh;
+        height: 2.8vh;
+        width: 35vh;
+    } 
+    #inputEmail::placeholder{
+        color:antiquewhite ;
+    }
+    #inputPassword {
+        align-self: center;
+        background-color: #0e54567f;
+        border-color: #fe942b;
+        border-radius: 1vh;
+        border-style:outset;
+        width: 25vh;
+        height: 2.8vh;
+    
+    }
+    #inputPassword::placeholder{
+        color: antiquewhite;
+    }
+    #botaoLogin{
+        margin-top: 5vh;
+        margin-bottom: 3vh;
+        background-color: #0e54567f;
+        border-color: #fe942b;
+        border-radius: 1vh;
+        border-style:outset;
+        font-family:'Alice', serif;
+        color:aliceblue;
+        font-size: 2vh;
+        width: 10vh;
+        height: 2.8vh;
+        align-self: center ;
+    }
+    #pCadLogin{
+        font-family:'Alice', serif;
+        color: aliceblue;
+        margin-top: 3vh;
+        text-align: center;
+    }
+    #linkCadLogin{
+        color:#03585b;
+    }
+    .popUp{
+        display: flex;
+        flex-direction: column;
+    }
+    #pPopUp{
+        font-family:'Alice', serif;
+        color: #03585b;
+        text-align: center;
+        font-size: 1.6vh;
+    }
+    #popUpGoogle{
+        background-color: #60AAAD;
+        border: none;
+        align-self: center;
+        margin-bottom: 3vh;
+    }
+    img{
+        width: 5vh;
+        align-items: center;
+    }
+}
+@media (min-width:1000px) and (max-width:2000px){
+    .formLogin{
+        display: flex;
+        flex-direction: column;
+    }
+    .titLogin {
+        font-family: 'Alegreya SC', serif;
+        font-size: 3.5vh;
+        color:aliceblue;
+        text-align: center; 
+        margin-top:8vh;
+    }
+    #labelEmail{
+        font-family:'Alice', serif;
+        color: #f0f8ff;
+        font-size: 2.5vh;
+        text-align: center;
+        margin-top: 6vh;
+    } 
+    #labelPassword {
+        font-family:'Alice', serif;
+        color: #f0f8ff;
+        align-self: center;
+        font-size: 2.5vh;
+        margin-bottom: 1vh;
+    }
+    #inputEmail{
+        align-self: center;
+        background-color: #0e54567f;
+        border-color: #fe942b;
+        border-radius: 1vh;
+        border-style:outset;
+        margin-bottom: 5vh;
+        margin-top: 1vh;
+        height: 2.8vh;
+        width: 35vh;
+    } 
+    #inputEmail::placeholder{
+        color:antiquewhite ;
+    }
+    #inputPassword {
+        align-self: center;
+        background-color: #0e54567f;
+        border-color: #fe942b;
+        border-radius: 1vh;
+        border-style:outset;
+        width: 25vh;
+        height: 2.8vh;
+    
+    }
+    #inputPassword::placeholder{
+        color: antiquewhite;
+    }
+    #botaoLogin{
+        margin-top: 5vh;
+        margin-bottom: 3vh;
+        background-color: #0e54567f;
+        border-color: #fe942b;
+        border-radius: 1vh;
+        border-style:outset;
+        font-family:'Alice', serif;
+        color:aliceblue;
+        font-size: 2vh;
+        width: 10vh;
+        height: 2.8vh;
+        align-self: center ;
+    }
+    #pCadLogin{
+        font-family:'Alice', serif;
+        color: aliceblue;
+        margin-top: 3vh;
+        text-align: center;
+    }
+    #linkCadLogin{
+        color:#03585b;
+    }
+    .popUp{
+        display: flex;
+        flex-direction: column;
+    }
+    #pPopUp{
+        font-family:'Alice', serif;
+        color: #03585b;
+        text-align: center;
+        font-size: 1.6vh;
+    }
+    #popUpGoogle{
+        background-color: #60AAAD;
+        border: none;
+        align-self: center;
+        margin-bottom: 3vh;
+    }
+    img{
+        width: 5vh;
+        align-items: center;
+    }
+}
+#titAbout{
+    font-family: 'Alegreya SC', serif;
+    font-size: 20px;
+    text-align: center;
+    color:aliceblue;
+    margin-bottom: 5vh;
+}
+#pAbout{
+    align-self: center;
+    font-family:'Alegreya SC', serif;
+    color: #f0f8ff;
+    margin-top: 2vh;
+    margin-bottom: 65vh;
+}
+@media (max-width: 500px) {
+body{
+    background-color: #60AAAD;
+}
+
+.header{
+   display: flex;
+   background-color:#60AAAD;
+   background-attachment: fixed;
+   flex-direction: column;
+   justify-content: center;
+   padding: 3vh;
+}
+.tituloHeader{
+    font-family:'Monoton', cursive;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 0.5vh;
+    color: aliceblue;
+}
+.pHeader{
+   font-size: 0px;
+}
+.menu{
+    background-color: #0e54567f;
+    border-color: #fe942b;
+    border-style: solid;
+    margin-top: -1.3vh;
+    margin-left: -2vh;
+    margin-right: -2vh;
+    display: flex;
+    flex-flow: row wrap;
+    height: 4vh;
+    justify-content: space-around;
+
+}
+.lista{
+   display: flex;
+   list-style: none;
+   margin: 0;
+   padding: 0; 
+   margin-right: 5vh;
+}
+.links{
+    flex:1;
+    text-align:center;
+    flex-direction: row;
+    margin-top: 0.8vh;
+    margin-left: 5vh;
+    font-family:'Alegreya SC', serif;
+    font-size: 20px;
+    
+}
+#linkSpa{
+    color:aliceblue;
+}
+main{
+    display: flex;
+    justify-content: center;
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;    
+}
+.footer{
+    background-color: #60AAAD;
+    width: 100%;
+    font-family: 'Alegreya SC', serif;
+    color:aliceblue;
+}
+a{
+   color: #03585b; 
+}
+}
+@media (min-width: 500px) and (max-width:700px) {
+    body{
+        background-color: #60AAAD;
+    }
+    .header{
+        display: flex;
+        background-color:#60AAAD;
+        background-attachment: fixed;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3vh;
+     }
+     .tituloHeader{
+        font-family:'Monoton', cursive;
+        font-size: 36px;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 0.1vh;
+        color: aliceblue;
+    }
+    .pHeader{
+        font-family: 'Alegreya SC', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 8px;
+        text-align: center;
+        margin-top: -2.3vh;
+        margin-bottom: 1.2vh;
+        color:aliceblue;
+     }
+     .menu{
+        background-color: #0e54567f;
+        border-color: #fe942b;
+        border-style: solid;
+        margin-top: -1.3vh;
+        margin-left: -2vh;
+        margin-right: -2vh;
+        display: flex;
+        flex-flow: row wrap;
+        height: 6vh;
+        justify-content: space-around;
+    }
+    .lista{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0; 
+        margin-right: 5vh;
+     }
+     .links{
+        flex:1;
+        text-align:center;
+        flex-direction: row;
+        margin-top: 1vh;
+        margin-left: 9vh;
+        margin-right: 3.5vh;
+        font-family:'Alegreya SC', serif;
+        font-size: 24px;
+    }
+    #linkSpa{
+        color:aliceblue;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+    
+    }
+    footer{
+        display: flex;
+        justify-content: center;    
+    }
+    .footer{
+        background-color: #60AAAD;
+        width: 100%;
+        font-family: 'Alegreya SC', serif;
+        color:aliceblue;
+    }
+    a{
+        color: #03585b; 
+     }
+}
+@media (min-width: 700px) and (max-width:2000px) {
+    body{
+        background-color: #60AAAD;
+    }
+    .header{
+        display: flex;
+        background-color:#60AAAD;
+        background-attachment: fixed;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3vh;
+     }
+     .tituloHeader{
+        font-family:'Monoton', cursive;
+        font-size: 34px;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 0.5vh;
+        color: aliceblue;
+    }
+    .pHeader{
+        font-family: 'Alegreya SC', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 8px;
+        text-align: center;
+        margin-top: -2.3vh;
+        margin-bottom: 1.2vh;
+        color:aliceblue;
+     }
+     .menu{
+        background-color: #0e54567f;
+        border-color: #fe942b;
+        border-style: solid;
+        margin-top: -1.3vh;
+        margin-left: -2vh;
+        margin-right: -2vh;
+        display: flex;
+        flex-flow: row wrap;
+        height: 4vh;
+        justify-content: space-around;
+    }
+    .lista{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0; 
+        margin-right: 5vh;
+     }
+     .links{
+        flex:1;
+        text-align:center;
+        flex-direction: row;
+        margin-top: 0.2vh;
+        margin-left: 5vh;
+        font-family:'Alegreya SC', serif;
+        font-size: 20px;
+    }
+    #linkSpa{
+        color:aliceblue;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+    
+    }
+    footer{
+        display: flex;
+        justify-content: center;    
+    }
+    .footer{
+        background-color: #60AAAD;
+        width: 100%;
+        font-family: 'Alegreya SC', serif;
+        color:aliceblue;
+    }
+    a{
+        color: #03585b; 
+     }
+}

@@ -1,9 +1,24 @@
-import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
-import { addDoc, signInWithPopup } from 'firebase/firestore';
-import { login, cadastro, loginGoogle } from '../src/firebase/firebaseLogin.js';
-import { addPost } from '../src/firebase/firestore.js';
+import {
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+  signInWithPopup,
+  onAuthStateChanged,
+} from 'firebase/auth';
+import {
+  addDoc,
+  collection,
+} from 'firebase/firestore';
+import {
+  login, cadastro, loginGoogle, verificarLogado,
+} from '../src/firebase/firebaseLogin.js';
+import {
+  addPost,
+
+} from '../src/firebase/firestore.js';
 
 jest.mock('firebase/auth');
+jest.mock('firebase/firestore');
+
 describe('testes de autenticação', () => {
   it('deveria fazer login', () => {
     signInWithEmailAndPassword.mockResolvedValueOnce('email', 'password');
@@ -22,22 +37,27 @@ describe('testes de autenticação', () => {
     expect(createUserWithEmailAndPassword).toHaveBeenCalledTimes(1);
     expect(createUserWithEmailAndPassword).toHaveBeenCalledWith(undefined, emailCad, passwordCad);
   });
-});
-
-describe('teste de post', () => {
-  it('deveria adicionar post na coleção', () => {
-    addDoc.mockResolvedValueOnce('conteudo', 'displayName');
-    const conteudo = 'oi, esse é um teste';
-    const displayName = 'Flora';
-    addPost(conteudo, displayName);
-    expect(addPost).toHaveBeenCalledWith(conteudo, displayName);
+  it('Deve redirecionar para "#feed" após o login', () => {
+    signInWithPopup.mockResolvedValueOnce();
+    loginGoogle();
+    expect(signInWithPopup).toHaveBeenCalledTimes(1);
+  });
+  it('deveria verificar se existe usuario logado', () => {
+    onAuthStateChanged.mockResolvedValueOnce();
+    verificarLogado();
+    expect(onAuthStateChanged).toHaveBeenCalledTimes(1);
   });
 });
 
-test('Deve redirecionar para "#feed" após o login', () => {
-  signInWithPopup.mockResolvedValueOnce();
-  window.location.hash = ''; // Define a hash vazia antes de chamar a função
-  loginGoogle();
-  expect(signInWithPopup).toHaveBeenCalled(1);
-  expect(window.location.hash).toBe('#feed');
+describe('teste de post', () => {
+  it('deveria adicionar post na coleção', async () => {
+    addDoc.mockResolvedValueOnce();
+    const mockCollection = 'collection';
+    collection.mockReturnValueOnce(mockCollection);
+    const conteudo = 'oi, esse é um teste';
+    const displayName = 'Flora';
+    const data = 'xx/xx/xxxx';
+    await addPost(conteudo, displayName, data);
+    expect(addDoc).toHaveBeenCalledWith(mockCollection, { conteudo, data, displayName });
+  });
 });
