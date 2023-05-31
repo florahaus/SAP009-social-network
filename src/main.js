@@ -1,4 +1,3 @@
-/* eslint-disable default-case */
 import login from './lib/login/login.js';
 import feed from './lib/feed/feed.js';
 import about from './lib/about/about.js';
