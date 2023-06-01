@@ -64,7 +64,7 @@ O projeto pode ser implantado em um serviço de hospedagem como o GitHub Pages, 
 
 ## 9. Protótipo
 
-Para visualizar o protótipo de baixa e alta fidelidade, acesse este link.
+![Protótipo de Alta fidelidade] (https://www.figma.com/file/euwW4u0HxkRiGt90VFYCH8/Social-Network?type=design&node-id=0-1&t=SXSpMEFcpaYoXQQ0-0)
 
 ## 10. História de Usuário 
 
